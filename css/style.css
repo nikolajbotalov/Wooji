@@ -8,7 +8,7 @@ body {
 .container {
   position: relative;
   width: 1920px;
-  height: 5267px;
+  height: 4344px;
   overflow: hidden;
 }
 .first-screen {
@@ -164,55 +164,55 @@ a:hover {
 }
 .year-1983 {
   left: 395px;
-  top: 1619px;
+  top: 1620px;
 }
 .year-1985 {
   left: 990px;
-  top: 1835px;
+  top: 1750px;
 }
 .year-2002 {
   left: 395px;
-  top: 2051px;
+  top: 1880px;
 }
 .year-2005 {
   left: 990px;
-  top: 2267px;
+  top: 2010px;
 }
 .year-2008 {
   left: 395px;
-  top: 2483px;
+  top: 2140px;
 }
 .year-2011 {
   left: 990px;
-  top: 2699px;
+  top: 2270px;
 }
 .year-2013 {
   left: 395px;
-  top: 2915px;
+  top: 2400px;
 }
 .year-2015 {
   left: 990px;
-  top: 3131px;
+  top: 2530px;
 }
 .year-2016 {
   left: 395px;
-  top: 3347px;
+  top: 2660px;
 }
 .year-2017 {
   left: 990px;
-  top: 3563px;
+  top: 2790px;
 }
 .year-2018 {
   left: 395px;
-  top: 3779px;
+  top: 2920px;
 }
 .year-2020 {
   left: 990px;
-  top: 3995px;
+  top: 3050px;
 }
 .foundation {
   position: absolute;
-  width: 300px;
+  width: 375px;
   height: 56px;
   font-family: sans-serif;
   font-style: normal;
@@ -224,135 +224,136 @@ a:hover {
 }
 .f-title__one {
   left: 554px;
-  top: 1624px;
+  top: 1625px;
 }
 .f-title__two {
   left: 1149px;
-  top: 1840px;
+  top: 1755px;
 }
 .f-title__three {
   left: 554px;
-  top: 2056px  
+  top: 1885px  
 }
 .f-title__four {
   left: 1149px;
-  top: 2272px;
+  top: 2015px;
 }
 .f-title__five {
   left: 554px;
-  top: 2488px;
+  top: 2145px;
 }
 .f-title__six {
   left: 1149px;
-  top: 2704px;
+  top: 2275px;
 }
 .f-title__seven {
   left: 554px;
-  top: 2920px;
+  top: 2405px;
 }
 .f-title__eight {
   left: 1149px;
-  top: 3136px;
+  top: 2535px;
 }
 .f-title__nine {
   left: 554px;
-  top: 3352px;
+  top: 2665px;
 }
 .f-title__ten {
   left: 1149px;
-  top: 3568px;
+  top: 2795px;
 }
 .f-title__eleven {
   left: 554px;
-  top: 3784px;
+  top: 2925px;
 }
 .f-title__twelve {
   left: 1149px;
-  top: 4000px;
+  top: 3055px;
 }
-.f-text__one {
-  width: 449px;
-  height: 120px;
+.horizontal-line-1983 {
+  position: absolute;
+  width: 575px;
   left: 395px;
-  top: 1734px;
-  color: #484848;
+  top: 1700px;
 }
-.f-text__two {
-  width: 449px;
-  height: 120px;
-  left: 990px;
-  top: 1972px;
-  color: #484848;
+.horizontal-line-1985 {
+  position: absolute;
+  width: 575px;
+  left: 945px;
+  top: 1830px;
+  transform: rotate(-180deg);
 }
-.f-text__three {
-  width: 449px;
-  height: 120px;
+.horizontal-line-2002 {
+  position: absolute;
+  width: 575px;
   left: 395px;
-  top: 2166px;
-  color: #484848;
+  top: 1960px;
 }
-.f-text__four {
-  width: 449px;
-  height: 120px;
-  left: 990px;
-  top: 2404px;
-  color: #484848;
+.horizontal-line-2005 {
+  position: absolute;
+  width: 575px;
+  left: 945px;
+  top: 2090px;
+  transform: rotate(-180deg);
 }
-.f-text__five {
-  width: 449px;
-  height: 120px;
+.horizontal-line-2008 {
+  position: absolute;
+  width: 575px;
   left: 395px;
-  top: 2598px;
-  color: #484848;
+  top: 2235px;
 }
-.f-text__six {
-  width: 449px;
-  height: 120px;
-  left: 990px;
-  top: 2836px;
-  color: #484848;
+.horizontal-line-2011 {
+  position: absolute;
+  width: 575px;
+  left: 945px;
+  top: 2350px;
+  transform: rotate(-180deg);
 }
-.f-text__seven {
-  width: 449px;
-  height: 120px;
+.horizontal-line-2013 {
+  position: absolute;
+  width: 575px;
   left: 395px;
-  top: 3030px;
-  color: #484848;
+  top: 2500px;
 }
-.f-text__eight {
-  width: 449px;
-  height: 120px;
-  left: 990px;
-  top: 3268px;
-  color: #484848;
+.horizontal-line-2015 {
+  position: absolute;
+  width: 575px;
+  left: 945px;
+  top: 2610px;
+  transform: rotate(-180deg);
 }
-.f-text__nine {
-  width: 449px;
-  height: 120px;
+.horizontal-line-2016 {
+  position: absolute;
+  width: 575px;
   left: 395px;
-  top: 3462px;
-  color: #484848;
+  top: 2760px;
 }
-.f-text__ten {
-  width: 449px;
-  height: 120px;
-  left: 990px;
-  top: 3700px;
-  color: #484848;
+.horizontal-line-2017 {
+  position: absolute;
+  width: 575px;
+  left: 945px;
+  top: 2870px;
+  transform: rotate(-180deg);
 }
-.f-text__eleven {
-  width: 449px;
-  height: 120px;
+.horizontal-line-2018 {
+  position: absolute;
+  width: 575px;
   left: 395px;
-  top: 3894px;
-  color: #484848;
+  top: 3020px;
 }
-.f-text__twelve {
-  width: 449px;
-  height: 120px;
-  left: 990px;
-  top: 4132px;
-  color: #484848;
+.horizontal-line-2020 {
+  position: absolute;
+  width: 575px;
+  left: 945px;
+  top: 3130px;
+  transform: rotate(-180deg);
+}
+.vertical_line {
+  position: absolute;
+  left: 937px;
+  width: 40px;
+  height: 1500px;
+  top: 1705px;
 }
 /* end company info screen */
 
@@ -361,7 +362,7 @@ a:hover {
   width: 2060px;
   height: 511px;
   left: 0px;
-  top: 4209px;
+  top: 3330px;
   background: url('../images/bg.png') no-repeat;
 }
 .advantages__title {
@@ -506,17 +507,21 @@ a:hover {
 .awards-title {
   position: absolute;
   left: 721px;
-  top: 4792px;
+  top: 3913px;
   color: #34A2D4;
+}
+.awards-slides {
+  width: 133px;
+  height: 199px;
 }
 .certificates-slider {
   position: absolute;
-  height: 243px;
-  left: 578px;
-  top: 4867px;
+  height: 199px;
+  left: 395px;
+  top: 3986px;
 }
 .certificates-slider img {
-  padding: 0 22px 0 0;
+  padding: 0 10px 0 0;
 }
 /* end awards */
 
@@ -524,7 +529,7 @@ a:hover {
   position: absolute;
   width: 1920px;
   height: 90px;
-  top: 5177px;
+  top: 4254px;
   background: linear-gradient(17.66deg, #34A2D4 39.98%, #65B6DB 55.76%);
   font-family: sans-serif;
   font-style: normal;

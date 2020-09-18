@@ -1,8 +1,9 @@
-window.addEventListener('DOMContentLoaded', () => {
+import Products from './modules/Products.js';
 
-  const backBtn = document.querySelector('.back-button');
-  
-  backBtn.addEventListener('click', () => {
-    document.location.href = 'products.html';
-  }); 
+window.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+
+  const products = new Products('.companies', '.products');
+
+  products.init();
 });

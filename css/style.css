@@ -982,11 +982,11 @@ a:hover {
   background: url('../images/company/natural_organic.png') center;
   border: none;
 }
-.companies-yuhan_kimberly {
+.companies-scott {
   margin: 72px 34px;
   width: 107px;
   height: 23px;
-  background: url('../images/company/Yuhan_Kimberly.png') center;
+  background: url('../images/company/scott.png') center;
   border: none;
 }
 .companies-sandokkaebi {
@@ -1003,11 +1003,11 @@ a:hover {
   background: url('../images/company/SDJ.png') center;
   border: none;
 }
-.companies-super_bubble {
+.companies-sugar_bubble {
   margin: 46px 27px;
   width: 107px;
   height: 87px;
-  background: url('../images/company/super_bubble.png') center;
+  background: url('../images/company/sugar_bubble.png') center;
   border: none;
 }
 .companies-life_workshop {
@@ -1032,33 +1032,75 @@ a:hover {
   border: none;
 }
 
+.filters-title {
+  position: absolute;
+  left: 395px;
+  top: 765px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #34A2D4;
+}
+.filters-inputs {
+  position: absolute;
+  left: 395px;
+  top: 800px;
+  width: 150px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+}
 
 .cards-products {
   position: absolute;
-  width: 843px;
+  width: 865px;
   height: 770px;
   left: 587px;
   top: 791px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: start;
   flex-wrap: wrap;
+}
+.card {
+  height: 380px;
+  width: 267px;
+  margin-bottom: 44px;
+  margin-right: 21px;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
 }
 .card-image {
   width: 267px;
   height: 267px;
+  border-radius: 10px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+.card-heading {
+  height: 78px;
 }
 .card-title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+  padding: 18px 5px;
+  color: #000;
 }
 
 .more-details {
   border: 1px solid #000000;
   border-radius: 10px;
   background: #FFFFFF;
+  padding: 3px 5px;
 }
 .more-details-text {
   padding: 8px 4px;
@@ -1248,21 +1290,6 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.card {
-  width: 267px;
-}
-.card-image {
-  border-radius: 10px;
-}
-.card h3 {
-  padding: 18px 0;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000;
-}
-
 /* end similar items */
 
 .goodsDetails-footer {

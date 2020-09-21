@@ -1175,7 +1175,7 @@ a:hover {
 .goodsDetails-container {
   position: relative;
   width: 1920px;
-  height: 1261px;
+  height: 845px;
 }
 .goods-large-img {
   position: absolute;
@@ -1275,6 +1275,26 @@ a:hover {
   line-height: 16px;
   color: #424242;
 }
+.contacts-btn {
+  position: absolute;
+  left: 971px;
+  top: 495px;
+  background: #34A2D4;
+  box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
+  border-radius: 10px;
+  border: none;
+  padding: 12px 50px;
+}
+.contacts-btn__text {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
 /* end goods info */
 
 .similar-title {
@@ -1304,7 +1324,7 @@ a:hover {
   position: absolute;
   width: 1920px;
   height: 90px;
-  top: 1171px;
+  top: 848px;
   background: linear-gradient(17.66deg, #34A2D4 39.98%, #65B6DB 55.76%);
   font-family: sans-serif;
   font-style: normal;
@@ -1348,3 +1368,27 @@ a:hover {
   color: #FFFFFF;
 }
 /* end footer */
+
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 999;
+}
+.modal-dialog {
+  max-width: 500px;
+  width: 95%;
+  background: #fff;
+  border-radius: 5px;
+  margin: 100px auto;
+  /* padding: 40px 45px; */
+}
+.bigImage {
+  width: 500px;
+  height: 700px;
+}

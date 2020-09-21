@@ -7,10 +7,11 @@ export default class Products {
   constructor() {
     this.companyBtns = document.querySelector('.companies');
     this.products = document.querySelectorAll('.cards-products');
+    this.checkboxes = document.querySelectorAll('input');
+    this.sortedSection = document.querySelector('.sorted-product');
   } 
   
   /**
-   * 
    * @param {string} product - class name of company's product;
    */
   showProducts(product) {
@@ -24,6 +25,20 @@ export default class Products {
     }
   }
 
+  showSortProduct(product, checkboxSelector) {
+    this.hideCompanies();
+    this.cancelChecked(); 
+
+    let selector = '.' + product;
+    const sortedProducts = document.querySelectorAll(`div${selector}`);
+    sortedProducts.forEach(item => {
+      this.sortedSection.appendChild(item);
+      this.sortedSection.style.display = 'flex';
+    });
+
+    checkboxSelector.checked = true;
+  }
+
   /**
    * method hide all company's products
    */
@@ -34,12 +49,22 @@ export default class Products {
   }
 
   /**
+   * method cancel checked all checkboxes;
+   */
+  cancelChecked() {
+    this.checkboxes.forEach(checkbox => {
+      checkbox.checked = false;
+    });
+  }
+
+  /**
    *  main method for class
    */
   init() {
     
     // hide all company's products
     this.hideCompanies();
+    this.cancelChecked();
 
     // show first company products
     const company = document.querySelector('.diaso');
@@ -68,7 +93,15 @@ export default class Products {
           localStorage.setItem('productImage', cardImage);
           location.href = 'goodsDetails.html';
         }
+      });
+    });
+
+    this.checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('click', (e) => {
+        let target = e.target;
+
+        this.showSortProduct(target.nextElementSibling.className, checkbox);
       })
-    })
+    });
   }
 }

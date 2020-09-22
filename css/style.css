@@ -764,10 +764,11 @@ a:hover {
 
 
 /*********************************** CONTACTS PAGE ***********************************/
-.contacts-container {
+.contact-container {
   position: absolute;
   width: 1920px;
   height: 973px;
+  overflow-x: hidden;
   overflow: hidden;
 }
 .contacts-title {
@@ -1391,4 +1392,709 @@ a:hover {
 .bigImage {
   width: 500px;
   height: 700px;
+}
+
+/******************************** 1366  ******************************************/
+
+@media (max-width: 1366px) {
+  /********************** ABOUT US ************************/
+  .container {
+    max-width: 1366px;
+  }
+  .first-screen {
+    left: -616px;
+  }
+  .main-page__home_link {
+    left: 748px;
+  }
+  .main-page__menu {
+    left: 1424px;
+  }
+  .company-info__pic {
+    left: 132px;
+  }
+  .about-us__title {
+    left: 805px;
+  }
+  .about-us__text {
+    left: 805px;
+  }
+  .history__title {
+    left: 132px;
+  }
+  .year-1983 {
+    left: 132px;
+  }
+  .year-1985 {
+    left: 750px;
+  }
+  .year-2002 {
+    left: 132px;
+  }
+  .year-2005 {
+    left: 750px;
+  }
+  .year-2008 {
+    left: 132px;
+  }
+  .year-2011 {
+    left: 750px;
+  }
+  .year-2013 {
+    left: 132px;
+  }
+  .year-2015 {
+    left: 750px;
+  }
+  .year-2016 {
+    left: 132px;
+  }
+  .year-2017 {
+    left: 750px;
+  }
+  .year-2018 {
+    left: 132px;
+  }
+  .year-2020 {
+    left: 750px;
+  }
+  .f-title__one {
+    left: 291px;
+  }
+  .f-title__two {
+    left: 910px;
+  }
+  .f-title__three {
+    left: 291px;
+  }
+  .f-title__four {
+    left: 910px;
+  }
+  .f-title__five {
+    left: 291px;
+  }
+  .f-title__six {
+    left: 910px;
+  }
+  .f-title__seven {
+    left: 291px;
+  }
+  .f-title__eight {
+    left: 910px;
+  }
+  .f-title__nine {
+    left: 291px;
+  }
+  .f-title__ten {
+    left: 910px;
+  }
+  .f-title__eleven {
+    left: 291px;
+  }
+  .f-title__twelve {
+    left: 910px;
+  }
+  /********************** OUR LABORATORY ******************/
+  .laboratory-container {
+    max-width: 1366px;
+  }
+  .laboratory-ellipse {
+    left: 581px;
+  }
+  .laboratory-title {
+    left: 132px;
+  }
+  .laboratory-title-text {
+    left: 132px;
+  }
+  .lab-img-first {
+    left: 132px;
+  }
+  .lab-text-first {
+    left: 693px;
+    top: 1048px;
+  }
+  .lab-text-second {
+    left: 132px;
+  }
+  .lab-img-second {
+    left: 583px;
+  }
+  .lab-footer {
+    max-width: 1366px;
+  }
+  .horizontal-line-1983 {
+    left: 132px;
+  }
+  .horizontal-line-1985 {
+    left: 682px;
+  }
+  .horizontal-line-2002 {
+    left: 132px;
+  }
+  .horizontal-line-2005 {
+    left: 682px;
+  }
+  .horizontal-line-2008 {
+    left: 132px;
+  }
+  .horizontal-line-2011 {
+    left: 682px;
+  }
+  .horizontal-line-2013 {
+    left: 132px;
+  }
+  .horizontal-line-2015 {
+    left: 682px;
+  }
+  .horizontal-line-2016 {
+    left: 132px;
+  }
+  .horizontal-line-2017 {
+    left: 682px;
+  }
+  .horizontal-line-2018 {
+    left: 132px;
+  }
+  .horizontal-line-2020 {
+    left: 682px;
+  }
+  .vertical_line {
+    left: 675px;
+  }
+  .advantages {
+    max-width: 1366px;
+  }
+  .advantages__title {
+    left: 132px;
+  }
+  .circle-block__first {
+    left: 132px;
+  }
+  .circle-block__second {
+    left: 132px;
+  }
+  .advantages-title-block__first {
+    left: 228px;
+  }
+  .advantages-title-block__second {
+    left: 228px;
+  }
+  .advantages-lorem-block__first {
+    left: 228px;
+  }
+  .advantages-lorem-block__second {
+    left: 228px;
+  }
+  .message-icon {
+    left: 152px;
+  }
+  .search-icon {
+    left: 535px;
+  }
+  .shutdown-icon {
+    left: 920px;
+  }
+  .list-icon {
+    left: 156px;
+  }
+  .docs-icon {
+    left: 538px;
+  }
+  .cloud-icon {
+    left: 915px;
+  }
+  .awards-title {
+    left: 444px;
+  }
+  .certificates-slider {
+    left: 115px;
+  }
+  .footer {
+    max-width: 1366px;
+    
+  }
+  /********************** PRODUCTS PAGE *******************/
+  .products-container {
+    max-width: 1366px;
+  }
+  .companies-title {
+    left: 132px;
+  }
+  .companies-choose {
+    left: 132px;
+  }
+  .companies__block-card {
+    left: 132px;
+  }
+  .filters-title {
+    left: 132px;
+  }
+  .filters-inputs {
+    left: 132px;
+  }
+  .cards-products {
+    left: 354px;
+  }
+  .card {
+    width: 319px;
+    height: 419px;
+  }
+  .card-image {
+    width: 319px;
+    height: 319px;
+  }
+  .card-heading {
+    height: 70px;
+  }
+  .products-footer {
+    max-width: 1366px;
+  }
+  /********************** GOODS DETAILS PAGE **************/
+  .goodsDetails-container {
+    max-width: 1366px;
+  }
+  .back-button {
+    left: 132px;
+  }
+  .goods-large-img {
+    left: 244px;
+    width: 317px;
+    height: 317px;
+  }
+  .goods-title {
+    left: 585px;
+  }
+  .description {
+    left: 585px;
+  }
+  .goods-description {
+    left: 585px;
+  }
+  .contacts-btn {
+    left: 585px;
+  }
+  .goodsDetails-footer {
+    max-width: 1366px;
+  }
+  /********************** CONTACT PAGE ********************/
+  .contact-container {
+    max-width: 1366px;
+    height: 840px;
+  }
+  .home_link {
+    left: 132px;
+  }
+  .menu {
+    left: 808px;
+  }
+  .contacts-title {
+    left: 132px;
+  }
+  .geotag-img {
+    left: 132px;
+  }
+  .work-phone-img {
+    left: 132px;
+  }
+  .fax-img {
+    left: 132px;
+  }
+  .email-img {
+    left: 132px;
+  }
+  .contacts-p {
+    left: 195px;
+    width: 300px;
+  }
+  .map {
+    left: 580px;
+    width: 785px;
+    height: 589px;
+  }
+  .contacts-footer {
+    max-width: 1366px;
+    top: 750px;
+  }
+  .contacts-footer_link {
+    left: 150px;
+  }
+  .contact-phones {
+    left: 340px;
+  }
+  .contacts-address {
+    left: 495px;
+  }
+  .contacts-footer-menu {
+    left: 795px;
+  }
+}
+
+
+/******************************** 1366  ******************************************/
+@media (max-width: 320px) {
+  /********************** ABOUT US ************************/
+  /********************** OUR LABORATORY ******************/
+  .laboratory-container {
+    max-width: 320px;
+    height: 1700px;
+  }
+  .laboratory-ellipse {
+    left: 5px;
+    width: 500px;
+    height: 500px;
+    top: -225px;
+  }
+  .lab-main-img {
+    left: 7px;
+    top: 225px;
+    width: 425px;
+    height: 300px;
+  }
+  .laboratory-title {
+    left: 32px;
+    top: 303px;
+    width: 175px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .laboratory-title-text {
+    left: 32px;
+    top: 369px;
+    width: 250px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .lab-img-first {
+    left: 32px;
+    top: 600px;
+    width: 256px;
+    height: 173px;
+  }
+  .lab-text-first {
+    left: 32px;
+    top: 735px;
+    width: 210px;
+    height: 260px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 24px 16px 15px 30px;
+  }
+  .lab-img-second {
+    left: 32px;
+    top: 1072px;
+    width: 256px;
+    height: 173px;
+  }
+  .lab-text-second {
+    left: 32px;
+    top: 1207px;
+    width: 210px;
+    height: 260px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 24px 16px 15px 30px;
+  }
+  .lab-footer {
+    max-width: 320px;
+    top: 1567px;
+    height: 134px;
+  }
+  .contacts-footer_link {
+    left: 32px;
+    top: 24px;
+  }
+  .contacts-footer_link > img {
+    width: 70px;
+    height: 28px;
+  }
+  .contacts-address {
+    left: 138px;
+    top: 24px;
+    width: 147px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .contact-phones {
+    left: 26px;
+    top: 85px;
+    width: 93px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .contacts-footer-menu {
+    left: 138px;
+    top: 75px;
+    width: 200px;
+    height: 40px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    flex-wrap: wrap;
+  }
+  /********************** PRODUCTS PAGE *******************/
+  .products-container {
+    max-width: 320px;
+    height: 1632px;
+    overflow-x: hidden;
+  }
+  .companies-title {
+    left: 32px;
+    top: 92px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .companies-choose {
+    left: 32px;
+    top: 118px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .companies__block-card {
+    left: 32px;
+    top: 157px;
+    width: 230px;
+  }
+  .companies__block-card > label {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
+  .companies-cards {
+    width: 70px;
+    height: 70px;
+  }
+  .companies-diaso {
+    width: 36px;
+    height: 39px;
+    margin: 16px 17px;
+    background-size: 36px 39px;
+  }
+  .companies-gnk {
+    width: 36px;
+    height: 16px;
+    margin: 27px 17px;
+    background-size: 36px 16px;
+  }
+  .companies-its {
+    width: 41px;
+    height: 20px;
+    margin: 25px 15px;
+    background-size: 41px 20px;
+  }
+  .companies-lg {
+    width: 44px;
+    height: 31px;
+    margin: 20px 13px;
+    background-size: 44px 31px;
+  }
+  .companies-natural_organic {
+    width: 50px;
+    height: 23px;
+    margin: 24px 10px;
+    background-size: 50px 23px;
+  }
+  .companies-scott {
+    width: 50px;
+    height: 10px;
+    margin: 30px 10px;
+    background-size: 50px 10px;
+  }
+  .companies-sandokkaebi {
+    width: 36px;
+    height: 44px;
+    margin: 13px 17px;
+    background-size: 36px 44px;
+  }
+  .companies-sdj {
+    width: 40px;
+    height: 19px;
+    margin: 26px 15px;
+    background-size: 40px 19px;
+  }
+  .companies-sugar_bubble {
+    width: 42px;
+    height: 33px;
+    margin: 19px 14px;
+    background-size: 42px 33px;
+  }
+  .companies-life_workshop {
+    width: 28px;
+    height: 39px;
+    margin: 16px 21px;
+    background-size: 28px 39px;
+  }
+  .companies-homesland {
+    width: 55px;
+    height: 12px;
+    margin: 29px 7px;
+    background-size: 55px 12px;
+  }
+  .filters-title {
+    left: 32px;
+    top: 550px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .filters-inputs {
+    left: 32px;
+    top: 580px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .cards-products {
+    left: 32px;
+    width: 266px;
+  }
+  .card {
+    width: 123px;
+    height: 203px;
+    margin-right: 10px;
+  }
+  .card-image {
+    width: 123px;
+    height: 123px;
+  }
+  .card-heading {
+    height: 50px;
+  }
+  .card-title {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px 5px;
+  }
+  .products-footer {
+    max-width: 320px;
+    height: 134px;
+  }
+  /********************** GOODS DETAILS PAGE **************/
+  .goodsDetails-container {
+    max-width: 320px;
+    height: 914px;
+    overflow: hidden;
+  }
+  .back-button {
+    left: 32px;
+    top: 81px;
+    width: 96px;
+  }
+  .goods-large-img {
+    left: 32px;
+    top: 131px;
+    width: 255px;
+    height: 255px;
+  }
+  .goods-title {
+    left: 32px;
+    top: 507px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .description {
+    left: 32px;
+    top: 578px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .goods-description {
+    left: 32px;
+    top: 607px;
+    width: 256px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .contacts-btn {
+    left: 32px;
+    top: 688px;
+    width: 210px;
+  }
+  .goodsDetails-footer {
+    max-width: 320px;
+    top: 780px;
+    height: 134px;
+  }
+  /********************** CONTACT PAGE ********************/
+  .contact-container {
+    max-width: 320px;
+    overflow: hidden;
+    height: 684px;
+  }
+  .home_link {
+    left: 5px;
+    width: 97px;
+    height: 64px;
+    border-radius: 0 0 15px 15px;
+  }
+  .logo {
+    width: 72px;
+    height: 24px;
+    left: 11px;
+  }
+  .contacts-title {
+    left: 32px;
+    top: 104px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .geotag-img {
+    left: 32px;
+    top: 165px;
+    width: 13px;
+    height: 17px;
+  }
+  .work-phone-img {
+    left: 32px;
+    top: 210px;
+    width: 15px;
+    height: 15px;
+  }
+  .fax-img {
+    left: 32px;
+    top: 245px;
+    width: 14px;
+    height: 14px;
+  }
+  .email-img {
+    left: 32px;
+    top: 278px;
+    width: 14px;
+    height: 14px;
+  }
+  .address-text {
+    left: 60px;
+    top: 161px;
+    width: 150px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .work-phone-text {
+    left: 60px;
+    top: 210px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .fax-text {
+    left: 60px;
+    top: 245px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .email-text {
+    left: 60px;
+    top: 278px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .map {
+    left: 0;
+    top: 330px;
+    width: 320px;
+    height: 220px;
+  }
+  .contacts-footer {
+    max-width: 320px;
+    top: 550px;
+    height: 134px;
+  }
 }

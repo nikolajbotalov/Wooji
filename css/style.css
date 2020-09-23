@@ -7,9 +7,9 @@ body {
 }
 .container {
   position: relative;
-  width: 1920px;
+  width: auto;
   height: 4344px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .first-screen {
   position: absolute;
@@ -577,7 +577,7 @@ a:hover {
 /*********************************** LABORATORY PAGE ***********************************/
 .laboratory-container {
   position: relative;
-  width: 1920px;
+  width: auto;
   height: 2047px;
   overflow: hidden;
 }
@@ -766,10 +766,9 @@ a:hover {
 /*********************************** CONTACTS PAGE ***********************************/
 .contact-container {
   position: absolute;
-  width: 1920px;
+  width: auto;
   height: 973px;
-  overflow-x: hidden;
-  overflow: hidden;
+  /* overflow-x: hidden; */
 }
 .contacts-title {
   position: absolute;
@@ -903,32 +902,38 @@ a:hover {
 /*********************************** PRODUCTS PAGE ***********************************/
 .products-container {
   position: relative;
-  width: 1920px;
-  height: auto;
+  width: auto;
+  /* height: auto; */
+}
+.companies {
+  position: absolute;
+  left: 395px;
+  top: 163px;
+  height: 35vh;
 }
 .companies-title {
   position: absolute;
-  width: 186px;
+  width: 250px;
   height: 42px;
-  left: 395px;
-  top: 163px;
+  left: 0px;
+  top: 0px;
   color: #34A2D4;
 }
-
 .companies-choose {
   position: absolute;
-  left: 395px;
-  top: 228px;
+  left: 0px;
+  top: 65px;
+  width: 200px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 22px;
   color: #34A2D4;
 }
 .companies__block-card {
   position: absolute;
-  left: 395px;
-  top: 281px;
+  left: 0px;
+  top: 119px;
   width: 1135px;
   height: 370px;
   display: flex;
@@ -1063,12 +1068,15 @@ a:hover {
 .chk_bx {
   margin: 0 16px 16px 0px;
 }
+.products {
+  position: absolute;
+  left: 587px;
+  top: 791px;
+  height: 50vh;
+}
 .cards-products {
   position: absolute;
   width: 865px;
-  height: auto;
-  left: 587px;
-  top: 791px;
   display: flex;
   align-items: flex-start;
   justify-content: start;
@@ -1097,6 +1105,8 @@ a:hover {
   height: 78px;
 }
 .card-title {
+  width: inherit;
+  height: 20vh;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1123,10 +1133,10 @@ a:hover {
 
 
 .products-footer {
-  position: absolute;
+  position: fixed;
   width: 1920px;
-  height: 90px;
-  top: 2525px;
+  height: 09vh;
+  bottom: 0px;
   background: linear-gradient(17.66deg, #34A2D4 39.98%, #65B6DB 55.76%);
   font-family: sans-serif;
   font-style: normal;
@@ -1175,7 +1185,7 @@ a:hover {
 /*********************************** GOODSDETAILS PAGE ***********************************/
 .goodsDetails-container {
   position: relative;
-  width: 1920px;
+  width: auto;
   height: 845px;
 }
 .goods-large-img {
@@ -1618,14 +1628,11 @@ a:hover {
   .products-container {
     max-width: 1366px;
   }
-  .companies-title {
+  .companies {
+    position: absolute;
     left: 132px;
-  }
-  .companies-choose {
-    left: 132px;
-  }
-  .companies__block-card {
-    left: 132px;
+    top: 163px;
+    height: 35vh;
   }
   .filters-title {
     left: 132px;
@@ -1633,8 +1640,11 @@ a:hover {
   .filters-inputs {
     left: 132px;
   }
-  .cards-products {
+  .products {
+    position: absolute;
     left: 354px;
+    top: 791px;
+    height: 50vh;
   }
   .card {
     width: 319px;
@@ -1731,7 +1741,7 @@ a:hover {
 }
 
 
-/******************************** 1366  ******************************************/
+/******************************** 320 ******************************************/
 @media (max-width: 320px) {
   /********************** ABOUT US ************************/
   /********************** OUR LABORATORY ******************/
@@ -1835,24 +1845,26 @@ a:hover {
   /********************** PRODUCTS PAGE *******************/
   .products-container {
     max-width: 320px;
-    height: 1632px;
-    overflow-x: hidden;
+    /* height: 1632px; */
+    /* overflow-x: hidden; */
   }
-  .companies-title {
+  .companies {
+    /* position: absolute; */
     left: 32px;
     top: 92px;
+    /* height: 35vh; */
+  }
+  .companies-title {
     font-size: 18px;
     line-height: 22px;
   }
   .companies-choose {
-    left: 32px;
-    top: 118px;
+    top: 26px;
     font-size: 12px;
     line-height: 14px;
   }
   .companies__block-card {
-    left: 32px;
-    top: 157px;
+    top: 62px;
     width: 230px;
   }
   .companies__block-card > label {
@@ -1942,8 +1954,11 @@ a:hover {
     font-size: 10px;
     line-height: 12px;
   }
-  .cards-products {
+  .products {
     left: 32px;
+    height: 85vh;
+  }
+  .cards-products {
     width: 266px;
   }
   .card {

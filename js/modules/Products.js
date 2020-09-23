@@ -27,11 +27,12 @@ export default class Products {
 
   showSortProduct(product, checkboxSelector) {
     this.hideCompanies();
-    this.cancelChecked(); 
+    this.cancelChecked();
 
     let selector = '.' + product;
     const sortedProducts = document.querySelectorAll(`div${selector}`);
     sortedProducts.forEach(item => {
+      // item.parentNode.removeChild()
       this.sortedSection.appendChild(item);
       this.sortedSection.style.display = 'flex';
     });
@@ -61,8 +62,7 @@ export default class Products {
    *  main method for class
    */
   init() {
-    
-    // hide all company's products
+    // hide all company's products & cancel checked checkboxes
     this.hideCompanies();
     this.cancelChecked();
 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f9bb528c1fdcadbc209bfdf9f35dc685c3f79e3c
 export default class Sertificates {
   constructor() {
     this.certSection = document.querySelector(".certificates-slider");
@@ -30,6 +33,7 @@ export default class Sertificates {
     });
   }
 }
+<<<<<<< HEAD
 =======
 export default class Sertificates {
   constructor() {
@@ -63,3 +67,5 @@ export default class Sertificates {
   }
 }
 >>>>>>> 1b1815895a26b06b018887a51b56f3361af71b90
+=======
+>>>>>>> f9bb528c1fdcadbc209bfdf9f35dc685c3f79e3c

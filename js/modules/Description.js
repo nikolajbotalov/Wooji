@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f9bb528c1fdcadbc209bfdf9f35dc685c3f79e3c
 export default class Description {
   constructor() {
     this.productName = document.querySelector('.goods-title');
@@ -31,6 +34,7 @@ export default class Description {
       });
     }
   }
+<<<<<<< HEAD
 =======
 export default class Description {
   constructor() {
@@ -65,4 +69,6 @@ export default class Description {
     }
   }
 >>>>>>> 1b1815895a26b06b018887a51b56f3361af71b90
+=======
+>>>>>>> f9bb528c1fdcadbc209bfdf9f35dc685c3f79e3c
 }

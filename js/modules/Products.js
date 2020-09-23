@@ -7,8 +7,11 @@ export default class Products {
   constructor() {
     this.companyBtns = document.querySelector('.companies');
     this.products = document.querySelectorAll('.cards-products');
+<<<<<<< HEAD
     this.checkboxes = document.querySelectorAll('input');
     this.sortedSection = document.querySelector('.sorted-product');
+=======
+>>>>>>> 1b1815895a26b06b018887a51b56f3361af71b90
   } 
   
   /**
@@ -93,6 +96,7 @@ export default class Products {
           localStorage.setItem('productImage', cardImage);
           location.href = 'goodsDetails.html';
         }
+<<<<<<< HEAD
       });
     });
 
@@ -103,5 +107,9 @@ export default class Products {
         this.showSortProduct(target.nextElementSibling.className, checkbox);
       })
     });
+=======
+      })
+    })
+>>>>>>> 1b1815895a26b06b018887a51b56f3361af71b90
   }
 }

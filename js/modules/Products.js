@@ -1,25 +1,31 @@
 /**
  * The class displays the company's products
- * 
+ *
  * @author Nikolay Botalov <nikolaj.botalov@gmail.com> telegram <@nikolay696>
  */
 export default class Products {
   constructor() {
-    this.companyBtns = document.querySelector('.companies');
-    this.products = document.querySelectorAll('.cards-products');
-    this.checkboxes = document.querySelectorAll('input');
-    this.sortedSection = document.querySelector('.sorted-product');
-  } 
-  
+    this.companyBtns = document.querySelector(".companies");
+    this.products = document.querySelectorAll(".cards-products");
+    this.checkboxes = document.querySelectorAll("input");
+    this.filterBlocks = document.querySelectorAll(".filter");
+    this.largeDesiccant = document.querySelector("div.large-desiccant");
+    this.desiccant = document.querySelector("div.desiccant");
+    this.deodorant = document.querySelector('div.deodorant');
+    this.flavor = document.querySelector('div.flavor');
+    this.compound = document.querySelector('div.compound');
+    this.fruit_fly_trap = document.querySelector('div.fruit_fly_trap');
+  }
+
   /**
    * @param {string} product - class name of company's product;
    */
   showProducts(product) {
     this.hideCompanies();
-    let selector = '.' + product.slice(10); 
+    let selector = "." + product.slice(10);
     const company = document.querySelector(selector);
     if (company !== null) {
-      company.style.display = 'flex';
+      company.style.display = "flex";
     } else {
       return false;
     }
@@ -29,21 +35,13 @@ export default class Products {
     this.hideCompanies();
     this.cancelChecked();
 
-    console.log(product);
+    const sortedProducts = document.querySelector(`div.${product}`);
 
-    let selector = '.' + product;
-    const sortedProducts = document.querySelector(`div${selector}`);
     if (sortedProducts !== null) {
-      sortedProducts.style.display = 'flex';
+      sortedProducts.style.display = "flex";
     } else {
       return false;
     }
-    // const sortedProducts = document.querySelectorAll(`div${selector}`);
-    // sortedProducts.forEach(item => {
-    //   // item.parentNode.removeChild()
-    //   this.sortedSection.appendChild(item);
-    //   this.sortedSection.style.display = 'flex';
-    // });
 
     checkboxSelector.checked = true;
   }
@@ -52,8 +50,8 @@ export default class Products {
    * method hide all company's products
    */
   hideCompanies() {
-    this.products.forEach(product => {
-      product.style.display = 'none';
+    this.products.forEach((product) => {
+      product.style.display = "none";
     });
   }
 
@@ -61,7 +59,7 @@ export default class Products {
    * method cancel checked all checkboxes;
    */
   cancelChecked() {
-    this.checkboxes.forEach(checkbox => {
+    this.checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
   }
@@ -75,28 +73,37 @@ export default class Products {
     this.cancelChecked();
 
     // show first company products
-    const company = document.querySelector('.diaso');
+    const company = document.querySelector(".diaso");
     if (company === null) {
       return false;
     } else {
-      company.style.display = 'flex';
+      company.style.display = "flex";
     }
 
     // Сlick on the button, the company's products are displayed
-    this.companyBtns.addEventListener('click', (e) => {
-      let target = e.target; 
+    this.companyBtns.addEventListener("click", (e) => {
+      let target = e.target;
 
       this.showProducts(target.className);
     });
 
-    // 
-    this.products.forEach(productCard => {
+    // Click on product card
+    this.products.forEach((productCard) => {
       productCard.addEventListener('click', (e) => {
         let target = e.target;
 
-        if (target.className === 'more-details-text') {
+        // if click on card image, set product name and image 
+        if (target.className === 'card-image') {
+          let cardTitle = target.nextElementSibling.children[0].children[0].textContent;
+          let cardImage = target.src;
+
+          localStorage.setItem('productTitle', cardTitle);
+          localStorage.setItem('productImage', cardImage);
+          location.href = 'goodsDetails.html';
+        } else if (target.className === 'more-details-text') {
           let cardTitle = target.closest('.card-text').children[0].children[0].textContent;
           let cardImage = target.closest('.card').children[0].src;
+
           localStorage.setItem('productTitle', cardTitle);
           localStorage.setItem('productImage', cardImage);
           location.href = 'goodsDetails.html';
@@ -104,12 +111,27 @@ export default class Products {
       });
     });
 
-    this.checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('click', (e) => {
-        let target = e.target;
+    //
+    this.checkboxes.forEach((checkbox) => {
+      if (checkbox.nextElementSibling.className === 'large-desiccant') {
+        checkbox.nextElementSibling.textContent += ` (${this.largeDesiccant.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'desiccant') {
+        checkbox.nextElementSibling.textContent += ` (${this.desiccant.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'deodorant') {
+        checkbox.nextElementSibling.textContent += ` (${this.deodorant.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'flavor') {
+        checkbox.nextElementSibling.textContent += ` (${this.flavor.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'compound') {
+        checkbox.nextElementSibling.textContent += ` (${this.compound.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'fruit_fly_trap') {
+        checkbox.nextElementSibling.textContent += ` (${this.fruit_fly_trap.childElementCount})`
+      }
 
+      checkbox.addEventListener("click", (e) => {
+        let target = e.target;
+        console.log(this.largeDesiccant.childElementCount);
         this.showSortProduct(target.nextElementSibling.className, checkbox);
-      })
+      });
     });
   }
 }

@@ -504,12 +504,12 @@ a:hover {
 }
 /* end advantages */
 
-
 .awards-title {
   position: absolute;
-  left: 721px;
+  left: 900px;
   top: 3913px;
   color: #34A2D4;
+  text-align: center;
 }
 .awards-slides {
   width: 133px;
@@ -1060,7 +1060,7 @@ a:hover {
   position: absolute;
   left: 395px;
   top: 800px;
-  width: 115px;
+  width: 150px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -2111,6 +2111,7 @@ a:hover {
   .awards-title {
     left: 40px;
     top: 3302px;
+
   }
   .certificates-slider {
     left: 105px;

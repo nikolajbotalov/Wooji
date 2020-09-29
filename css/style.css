@@ -3536,10 +3536,12 @@ a:hover {
   .prev-btn {
     left: 58px;
     top: 3606px;
+    background-size: 20px 40px;
   }
   .next-btn {
     top: 3606px;
     left: 288px;
+    background-size: 20px 40px;
   }
   .footer {
     max-width: 375px;
@@ -4080,9 +4082,11 @@ a:hover {
   }
   .next-btn {
     left: 262px;
+    background-size: 20px 40px;
   }
   .prev-btn {
     left: 32px;
+    background-size: 20px 40px;
   }
   /********************** OUR LABORATORY ******************/
   .laboratory-container {

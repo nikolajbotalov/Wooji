@@ -2796,7 +2796,7 @@ a:hover {
     height: 40px;
     border: none; 
     background: url('../images/next.png') center;
-    background-size: 20px 40px;
+    background-size: 20px 40px; 
   }
   .footer {
     max-width: 415px;

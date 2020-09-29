@@ -2782,21 +2782,21 @@ a:hover {
     position: absolute;
     left: 78px;
     top: 3756px;
-    width: 20px;
-    height: 40px;
+    width: 24px;
+    height: 42px;
     border: none; 
-    background: url('../images/prev.png') center;
-    background-size: 20px 40px;
+    background: url('../images/prev.png');
+    background-size: contain;
   }
   .next-btn {
     position: absolute;
     left: 308px;
     top: 3756px;
-    width: 20px;
-    height: 40px;
+    width: 24px;
+    height: 42px;
     border: none; 
-    background: url('../images/next.png') center;
-    background-size: 20px 40px; 
+    background: url('../images/next.png') ;
+    background-size: contain; 
   }
   .footer {
     max-width: 415px;
@@ -3536,12 +3536,12 @@ a:hover {
   .prev-btn {
     left: 58px;
     top: 3606px;
-    background-size: 20px 40px;
+
   }
   .next-btn {
     top: 3606px;
     left: 288px;
-    background-size: 20px 40px;
+
   }
   .footer {
     max-width: 375px;
@@ -4082,11 +4082,9 @@ a:hover {
   }
   .next-btn {
     left: 262px;
-    background-size: 20px 40px;
   }
   .prev-btn {
     left: 32px;
-    background-size: 20px 40px;
   }
   /********************** OUR LABORATORY ******************/
   .laboratory-container {

@@ -2782,8 +2782,8 @@ a:hover {
     position: absolute;
     left: 78px;
     top: 3756px;
-    width: 20px;
-    height: 40px;
+    width: 24px;
+    height: 42px;
     border: none; 
     background: url('../images/prev.png');
     background-size: cover;
@@ -2792,8 +2792,8 @@ a:hover {
     position: absolute;
     left: 308px;
     top: 3756px;
-    width: 20px;
-    height: 40px;
+    width: 24px;
+    height: 42px;
     border: none; 
     background: url('../images/next.png') ;
     background-size: cover; 

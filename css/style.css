@@ -2785,7 +2785,7 @@ a:hover {
     width: 20px;
     height: 40px;
     border: none; 
-    background: url('../images/prev.png');
+    background: url('../images/prev.png') center;
     background-size: 20px 40px;
   }
   .next-btn {
@@ -2795,7 +2795,7 @@ a:hover {
     width: 20px;
     height: 40px;
     border: none; 
-    background: url('../images/next.png');
+    background: url('../images/next.png') center;
     background-size: 20px 40px;
   }
   .footer {

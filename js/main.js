@@ -1,6 +1,7 @@
 import Products from './modules/Products.js';
 import Sertificates from './modules/Sertificates.js';
 import Description from './modules/Description.js';
+import Slider from './modules/Slider.js';
 
 /**
  * @author Nikolay Botalov <nikolaj.botalov@gmail.com>
@@ -14,8 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
   const sertificates = new Sertificates();
   sertificates.openBigImage();
 
+  const slider = new Slider();
+  slider.init();
+
   const productDescription = new Description();
   productDescription.getProduct();
+
 });
 
 

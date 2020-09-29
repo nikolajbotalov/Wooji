@@ -2693,25 +2693,25 @@ a:hover {
     background-size: 415px 967px;
   }
   .advantages__title {
-    left: 32px;
+    left: 78px;
     top: 36px;
   }
   .circle-block__first {
-    left: 32px;
+    left: 78px;
     top: 96px;
     width: 78px;
     height: 394px;
     flex-wrap: wrap;
   }
   .circle-block__second {
-    left: 32px;
+    left: 78px;
     top: 542px;
     width: 78px;
     height: 394px;
     flex-wrap: wrap;
   }
   .advantages-title-block__first {
-    left: 138px;
+    left: 184px;
     top: 104px;
     width: 105px;
     height: 335px;
@@ -2719,7 +2719,7 @@ a:hover {
     align-items: flex-start;
   }
   .advantages-title-block__second {
-    left: 138px;
+    left: 184px;
     top: 545px;
     width: 105px;
     height: 335px;
@@ -2727,7 +2727,7 @@ a:hover {
     align-items: flex-start;
   }
   .advantages-lorem-block__first {
-    left: 138px;
+    left: 184px;
     top: 135px;
     width: 150px;
     height: 370px;
@@ -2735,7 +2735,7 @@ a:hover {
     align-items: flex-start;
   }
   .advantages-lorem-block__second {
-    left: 138px;
+    left: 184px;
     top: 575px;
     width: 150px;
     height: 370px;
@@ -2743,39 +2743,60 @@ a:hover {
     align-items: flex-start;
   }
   .message-icon {
-    left: 52px;
+    left: 98px;
     top: 120px;
   }
   .search-icon {
-    left: 52px;
+    left: 98px;
     top: 275px;
   }
   .shutdown-icon {
-    left: 52px;
+    left: 98px;
     top: 430px;
   }
   .list-icon {
-    left: 56px;
+    left: 102px;
     top: 565px;
   }
   .docs-icon {
-    left: 56px;
+    left: 102px;
     top: 725px;
   }
   .cloud-icon {
-    left: 49px;
+    left: 95px;
     top: 880px;
   }
   .awards-title {
-    left: 155px;
+    left: 125px;
     top: 3652px;
   }
   .certificates-slider {
-    left: 155px;
+    left: 138px;
     top: 3705px;
     width: 130px;
     height: 185px;
     overflow: hidden;
+    box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
+  }
+  .prev-btn {
+    position: absolute;
+    left: 78px;
+    top: 3756px;
+    width: 20px;
+    height: 40px;
+    border: none; 
+    background: url('../images/prev.svg');
+    background-size: 20px 40px;
+  }
+  .next-btn {
+    position: absolute;
+    left: 308px;
+    top: 3756px;
+    width: 20px;
+    height: 40px;
+    border: none; 
+    background: url('../images/next.svg');
+    background-size: 20px 40px;
   }
   .footer {
     max-width: 415px;
@@ -2904,7 +2925,7 @@ a:hover {
     height: 134px;
   }
   .contacts-footer_link {
-    left: 32px;
+    left: 78px;
     top: 24px;
   }
   .contacts-footer_link > img {
@@ -2912,28 +2933,33 @@ a:hover {
     height: 28px;
   }
   .contacts-address {
-    left: 138px;
+    left: 184px;
     top: 24px;
     width: 147px;
     font-size: 10px;
     line-height: 12px;
   }
   .contact-phones {
-    left: 26px;
-    top: 85px;
+    left: 78px;
+    top: 75px;
     width: 93px;
     font-size: 10px;
     line-height: 12px;
+    text-decoration: none;
+    color: #fff;
   }
   .contacts-footer-menu {
-    left: 138px;
+    left: 184px;
     top: 75px;
-    width: 200px;
+    width: 175px;
     height: 40px;
     font-weight: normal;
     font-size: 10px;
     line-height: 12px;
     flex-wrap: wrap;
+  }
+  .contacts-footer-menu > a {
+    padding: 2px 30px 2px 0;
   }
   /********************** PRODUCTS PAGE *******************/
   .products-container {
@@ -3052,7 +3078,7 @@ a:hover {
   .contact-container {
     max-width: 415px;
     width: 415px;
-    height: 896px;
+    height: 712px;
     overflow: hidden;
   }
   .menu {
@@ -3126,7 +3152,7 @@ a:hover {
     line-height: 14px;
   }
   .map {
-    top: 625px;
+    top: 400px;
     width: 415px;
     height: 312px;
   }
@@ -3424,25 +3450,25 @@ a:hover {
     background-size: 375px 967px;
   }
   .advantages__title {
-    left: 32px;
+    left: 58px;
     top: 36px;
   }
   .circle-block__first {
-    left: 32px;
+    left: 58px;
     top: 96px;
     width: 78px;
     height: 394px;
     flex-wrap: wrap;
   }
   .circle-block__second {
-    left: 32px;
+    left: 58px;
     top: 542px;
     width: 78px;
     height: 394px;
     flex-wrap: wrap;
   }
   .advantages-title-block__first {
-    left: 138px;
+    left: 164px;
     top: 104px;
     width: 105px;
     height: 335px;
@@ -3450,7 +3476,7 @@ a:hover {
     align-items: flex-start;
   }
   .advantages-title-block__second {
-    left: 138px;
+    left: 164px;
     top: 545px;
     width: 105px;
     height: 335px;
@@ -3458,7 +3484,7 @@ a:hover {
     align-items: flex-start;
   }
   .advantages-lorem-block__first {
-    left: 138px;
+    left: 164px;
     top: 135px;
     width: 150px;
     height: 370px;
@@ -3466,7 +3492,7 @@ a:hover {
     align-items: flex-start;
   }
   .advantages-lorem-block__second {
-    left: 138px;
+    left: 164px;
     top: 575px;
     width: 150px;
     height: 370px;
@@ -3474,41 +3500,46 @@ a:hover {
     align-items: flex-start;
   }
   .message-icon {
-    left: 52px;
+    left: 78px;
     top: 120px;
   }
   .search-icon {
-    left: 52px;
+    left: 78px;
     top: 275px;
   }
   .shutdown-icon {
-    left: 52px;
+    left: 78px;
     top: 430px;
   }
   .list-icon {
-    left: 56px;
+    left: 81px;
     top: 565px;
   }
   .docs-icon {
-    left: 56px;
+    left: 81px;
     top: 725px;
   }
   .cloud-icon {
-    left: 49px;
+    left: 75px;
     top: 880px;
   }
   .awards-title {
-    left: 120px;
+    left: 105px;
     top: 3502px;
   }
   .certificates-slider {
-    left: 130px;
+    left: 118px;
     top: 3548px;
     width: 130px;
     height: 185px;
   }
-  .awards-slides:not(:last-child) {
-    display: none;
+  .prev-btn {
+    left: 58px;
+    top: 3606px;
+  }
+  .next-btn {
+    top: 3606px;
+    left: 288px;
   }
   .footer {
     max-width: 375px;
@@ -3616,7 +3647,7 @@ a:hover {
     height: 134px;
   }
   .contacts-footer_link {
-    left: 32px;
+    left: 58px;
     top: 24px;
   }
   .contacts-footer_link > img {
@@ -3624,23 +3655,25 @@ a:hover {
     height: 28px;
   }
   .contacts-address {
-    left: 138px;
+    left: 164px;
     top: 24px;
     width: 147px;
     font-size: 10px;
     line-height: 12px;
   }
   .contact-phones {
-    left: 26px;
-    top: 85px;
+    left: 58px;
+    top: 75px;
     width: 93px;
     font-size: 10px;
     line-height: 12px;
+    text-decoration: none;
+    color: #fff;
   }
   .contacts-footer-menu {
-    left: 138px;
+    left: 164px;
     top: 75px;
-    width: 200px;
+    width: 175px;
     height: 40px;
     font-weight: normal;
     font-size: 10px;
@@ -4000,11 +4033,56 @@ a:hover {
     left: 248px;
     height: 1625px;
   }
+  .advantages__title {
+    left: 32px;
+  }
+  .circle-block__first {
+    left: 32px;
+  }
+  .circle-block__second {
+    left: 32px;
+  }
+  .advantages-title-block__first {
+    left: 138px;
+  }
+  .advantages-title-block__second {
+    left: 138px;
+  }
+  .advantages-lorem-block__first {
+    left: 138px;
+  }
+  .advantages-lorem-block__second {
+    left: 138px;
+  }
+  .message-icon {
+    left: 52px;
+  }
+  .search-icon {
+    left: 52px;
+  }
+  .shutdown-icon {
+    left: 52px;
+  }
+  .list-icon {
+    left: 56px;
+  }
+  .docs-icon {
+    left: 56px;
+  }
+  .cloud-icon {
+    left: 49px;
+  }
   .awards-title {
-    left: 90px;
+    left: 80px;
   }
   .certificates-slider {
-    left: 100px;
+    left: 92px;
+  }
+  .next-btn {
+    left: 262px;
+  }
+  .prev-btn {
+    left: 32px;
   }
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
@@ -4021,6 +4099,20 @@ a:hover {
   }
   .lab-info-block__seconds {
     left: 32px;
+  }
+  .contacts-footer_link {
+    left: 32px;
+  }
+  .contact-phones {
+    left: 32px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .contacts-address {
+    left: 138px;
+  }
+  .contacts-footer-menu {
+    left: 138px;
   }
   /********************** PRODUCTS PAGE *******************/
   .products-container {

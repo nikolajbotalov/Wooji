@@ -1402,14 +1402,19 @@ a:hover {
   z-index: 999;
 }
 .modal-dialog {
-  max-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* max-width: 500px;
   width: 95%;
   background: #fff;
   border-radius: 5px;
-  margin: 100px auto;
+  margin: 100px auto; */
   /* padding: 40px 45px; */
 }
 .bigImage {
+  padding: 20px;
   width: 500px;
   height: 700px;
 }
@@ -1522,6 +1527,11 @@ a:hover {
   }
   .f-title__twelve {
     left: 910px;
+  }
+  .bigImage {
+    padding: 20px;
+    width: 350px;
+    height: 550px;
   }
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
@@ -2112,6 +2122,11 @@ a:hover {
     max-width: 768px;
     top: 3561px;
     height: 119px;
+  }
+  .bigImage {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
   }
   /********************** OUR LABORATORY ******************/
   .laboratory-container {

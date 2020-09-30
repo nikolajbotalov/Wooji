@@ -2797,21 +2797,21 @@ a:hover {
     position: absolute;
     left: 78px;
     top: 3756px;
-    width: 19px;
-    height: 39px;
+    width: 24px;
+    height: 42px;
     border: none; 
     background: url('../images/prev.png');
-    background-size: cover;
+    background-size: 24px 42px;
   }
   .next-btn {
     position: absolute;
     left: 308px;
     top: 3756px;
-    width: 19px;
-    height: 39px;
+    width: 24px;
+    height: 42px;
     border: none; 
     background: url('../images/next.png') ;
-    background-size: cover; 
+    background-size: 24px 42px;
   }
   .footer {
     max-width: 415px;

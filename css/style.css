@@ -2772,8 +2772,8 @@ a:hover {
   .companies-diaso {
     width: 23px;
     height: 25px;
-    margin: 10px 11px;
-    background-size: cover;
+    margin: 10px 9px 8px 11px;
+    background-size: 23px 25px;
   }
   .companies-gnk {
     width: 29px;

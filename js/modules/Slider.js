@@ -17,7 +17,12 @@ export default class Slider {
       slide.style.display = "none";
     });
 
-    this.slides[this.slideIndex - 1].style.display = "block";
+    if (this.slides[this.slideIndex - 1] === undefined) {
+      return false;
+    } else {
+      this.slides[this.slideIndex - 1].style.display = "block";
+    }
+
   }
 
   plusSlides(n) {

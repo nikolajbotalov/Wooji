@@ -31,6 +31,10 @@ export default class Products {
     }
   }
 
+  /**
+   * @param {string} product - class name sorted products
+   * @param {checkbox} checkboxSelector - current checkbox 
+   */
   showSortProduct(product, checkboxSelector) {
     this.hideCompanies();
     this.cancelChecked();
@@ -83,8 +87,10 @@ export default class Products {
     // Сlick on the button, the company's products are displayed
     this.companyBtns.addEventListener("click", (e) => {
       let target = e.target;
+      let selector = target.className.slice(10);
 
       this.showProducts(target.className);
+      localStorage.setItem('currentProducts', selector);
     });
 
     // Click on product card
@@ -131,6 +137,7 @@ export default class Products {
         let target = e.target;
         console.log(this.largeDesiccant.childElementCount);
         this.showSortProduct(target.nextElementSibling.className, checkbox);
+        localStorage.setItem('currentProducts', target.nextElementSibling.className);
       });
     });
   }

@@ -2773,7 +2773,7 @@ a:hover {
     width: 23px;
     height: 25px;
     margin: 10px 11px;
-    background-size: contain;
+    background-size: cover;
   }
   .companies-gnk {
     width: 29px;

@@ -834,7 +834,6 @@ a:hover {
 .products-container {
   position: relative;
   width: 1920px;
-  /* height: auto; */
 }
 .companies {
   position: absolute;
@@ -1327,12 +1326,6 @@ a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* max-width: 500px;
-  width: 95%;
-  background: #fff;
-  border-radius: 5px;
-  margin: 100px auto; */
-  /* padding: 40px 45px; */
 }
 .bigImage {
   padding: 20px;
@@ -2780,7 +2773,7 @@ a:hover {
     width: 23px;
     height: 25px;
     margin: 10px 11px;
-    background-size: 23px 25px;
+    background-size: contain;
   }
   .companies-gnk {
     width: 29px;

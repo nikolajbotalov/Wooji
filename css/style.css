@@ -976,6 +976,16 @@ a:hover {
   line-height: 21px;
   color: #34A2D4;
 }
+.room-filter {
+  position: absolute;
+  left: 395px;
+  top: 1025px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #34A2D4;
+}
 .filters-inputs {
   position: absolute;
   left: 395px;
@@ -994,6 +1004,20 @@ a:hover {
   display: flex;
   align-items: start;
   justify-content: start;
+}
+.room-inputs {
+  position: absolute;
+  left: 395px;
+  top: 1060px;
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
 }
 .chk_bx {
   margin: 0 16px 16px 0px;
@@ -1548,8 +1572,16 @@ a:hover {
   .filters-title {
     left: 132px;
   }
+  .room-filter {
+    left: 132px;
+    top: 980px;
+  }
   .filters-inputs {
     left: 132px;
+  }
+  .room-inputs {
+    left: 132px;
+    top: 1015px;
   }
   .products {
     position: absolute;
@@ -2127,9 +2159,17 @@ a:hover {
     left: 72px;
     top: 615px;
   }
+  .room-filter {
+    left: 72px;
+    top: 825px;
+  }
   .filters-inputs {
     left: 72px;
     top: 651px;
+  }
+  .room-inputs {
+    left: 72px;
+    top: 860px;
   }
   .products {
     left: 255px;
@@ -2846,17 +2886,41 @@ a:hover {
     position: absolute;
     left: 48px;
     top: 250px;
+    width: 300px;
+    height: 125px;
   }
   .filters-title {
-    left: 0;
+    left: 45px;
     top: 0;
     width: 35px;
     font-size: 14px;
     line-height: 16px;
   }
-  .filters-inputs {
+  .room-filter {
+    left: 150px;
+    top: 0;
+    font-size: 14px;
+    line-height: 16px;
+    width: 130px;
+  }
+  .filter-tabs {
+    position: absolute;
     left: 0;
     top: 28px;
+    width: 300px;
+    height: 100px;
+  }
+  .filters-inputs {
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .room-inputs {
+    left: 0;
+    top: 0;
     width: 300px;
     height: 100px;
     font-size: 10px;
@@ -2889,6 +2953,9 @@ a:hover {
   }
   .card-title {
     width: 123px;
+  }
+  .products-footer {
+    display: none;
   }
   /********************** GOODS DETAILS PAGE **************/
   .goodsDetails-container {
@@ -3509,8 +3576,7 @@ a:hover {
     line-height: 14px;
   }
   .products-footer {
-    max-width: 375px;
-    height: 134px;
+    display: none;
   }
   /********************** GOODS DETAILS PAGE **************/
   .goodsDetails-container {
@@ -3785,6 +3851,12 @@ a:hover {
   .filtres {
     left: 32px;
   }
+  .filters-title {
+    left: 35px;
+  }
+  .room-filter {
+    left: 130px;
+  }
   .products {
     left: 32px;
   }
@@ -3797,6 +3869,9 @@ a:hover {
   }
   .goods-info {
     left: 32px;
+  }
+  .products-footer {
+    display: none;
   }
   /********************** CONTACT PAGE ********************/
   .contact-container {

@@ -15,6 +15,10 @@ export default class Products {
     this.flavor = document.querySelector('div.flavor');
     this.compound = document.querySelector('div.compound');
     this.fruit_fly_trap = document.querySelector('div.fruit_fly_trap');
+    this.local = document.createElement('a');
+    this.git = document.createElement('a'); 
+    this.filterSection = document.querySelector('.filtres');
+    this.filterTabs = document.querySelector('.filter-tabs');
   }
 
   /**
@@ -69,12 +73,56 @@ export default class Products {
   }
 
   /**
+   * method set to display first checkbox block by default
+   * click to filter's name show checkboxes block
+   */
+  showCurrentFilterBlock() {
+    if (this.filterSection === null) {
+      return false;
+    } else {
+      this.filterTabs.children[1].style.display = 'none';
+      this.filterSection.addEventListener('click', (e) => {
+        let target = e.target; 
+
+        if (target.className === 'filters-title') {
+          this.filterTabs.children[0].style.display = 'flex';
+          this.filterTabs.children[1].style.display = 'none';
+        } else if (target.className === 'room-filter') {
+          this.filterTabs.children[1].style.display = 'flex';
+          this.filterTabs.children[0].style.display = 'none';
+        } 
+      });
+    }
+  }
+
+  /**
    *  main method for class
    */
   init() {
+    // if loc.href = index.html and click to room card,
+    // room title save to localStorage
+    this.local = 'http://127.0.0.1:5500/index.html';
+    this.git = 'https://nikolajbotalov.github.io/Wooji/index.html'; 
+    if (location.href === this.local || location.href === this.git) {
+      const roomBtn = document.querySelector('.advantages-container');
+      roomBtn.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target.className == 'room-image') {
+          let roomTitle = target.nextElementSibling.children[0].textContent;
+          localStorage.setItem('roomTitle', roomTitle);
+        } else if (target.className === 'room-btn-title') {
+          let roomTitle = target.closest('.card-room').children[1].children[0].textContent;
+          localStorage.setItem('roomTitle', roomTitle);
+        }
+      });
+    }
+
+
     // hide all company's products & cancel checked checkboxes
     this.hideCompanies();
     this.cancelChecked();
+    this.showCurrentFilterBlock();
+
 
     // show first company products
     const company = document.querySelector(".diaso");
@@ -83,6 +131,7 @@ export default class Products {
     } else {
       company.style.display = "flex";
     }
+
 
     // Сlick on the button, the company's products are displayed
     this.companyBtns.addEventListener("click", (e) => {
@@ -135,7 +184,6 @@ export default class Products {
 
       checkbox.addEventListener("click", (e) => {
         let target = e.target;
-        console.log(this.largeDesiccant.childElementCount);
         this.showSortProduct(target.nextElementSibling.className, checkbox);
         localStorage.setItem('currentProducts', target.nextElementSibling.className);
       });

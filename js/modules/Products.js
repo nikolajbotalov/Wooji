@@ -121,8 +121,9 @@ export default class Products {
     // hide all company's products & cancel checked checkboxes
     this.hideCompanies();
     this.cancelChecked();
-    this.showCurrentFilterBlock();
-
+    if (document.documentElement.clientWidth <= 415) {
+      this.showCurrentFilterBlock();
+    }
 
     // show first company products
     const company = document.querySelector(".diaso");

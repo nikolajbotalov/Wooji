@@ -15,6 +15,11 @@ export default class Products {
     this.flavor = document.querySelector('div.flavor');
     this.compound = document.querySelector('div.compound');
     this.fruit_fly_trap = document.querySelector('div.fruit_fly_trap');
+    this.kitchen = document.querySelector('div.kitchen');
+    this.wardrobe = document.querySelector('div.wardrobe');
+    this.bathroom = document.querySelector('div.bathroom');
+    this.car = document.querySelector('div.car');
+    this.livingRoom = document.querySelector('div.living-room');
     this.local = document.createElement('a');
     this.git = document.createElement('a'); 
     this.filterSection = document.querySelector('.filtres');
@@ -180,8 +185,20 @@ export default class Products {
       } else if (checkbox.nextElementSibling.className === 'compound') {
         checkbox.nextElementSibling.textContent += ` (${this.compound.childElementCount})`;
       } else if (checkbox.nextElementSibling.className === 'fruit_fly_trap') {
-        checkbox.nextElementSibling.textContent += ` (${this.fruit_fly_trap.childElementCount})`
+        checkbox.nextElementSibling.textContent += ` (${this.fruit_fly_trap.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'kitchen') {
+        checkbox.nextElementSibling.textContent += ` (${this.kitchen.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'wardrobe') {
+        checkbox.nextElementSibling.textContent += ` (${this.wardrobe.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'bathroom') {
+        checkbox.nextElementSibling.textContent += ` (${this.bathroom.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'car') {
+        checkbox.nextElementSibling.textContent += ` (${this.car.childElementCount})`;
+      } else if (checkbox.nextElementSibling.className === 'living-room') {
+        checkbox.nextElementSibling.textContent += ` (${this.livingRoom.childElementCount})`;
       }
+
+    
 
       checkbox.addEventListener("click", (e) => {
         let target = e.target;

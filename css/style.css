@@ -2327,7 +2327,7 @@ a:hover {
   /********************** ABOUT US ************************/
   .container {
     max-width: 415px;
-    height: 4839px;
+    height: 3634px;
     overflow: hidden;
   }
   .first-screen {
@@ -2554,7 +2554,7 @@ a:hover {
   .advantages { 
     top: 2650px;
     left: 0px;
-    height: 1736px;
+    height: 475px;
     background: url('../images/bg375.png') no-repeat;
     background-size: 415px 1736px;
   }
@@ -2567,6 +2567,8 @@ a:hover {
     left: 105px;
     top: 89px;
     width: 204px;
+    height: 301px;
+    overflow: hidden;
   }
   .room {
     margin-right: 0;
@@ -2577,13 +2579,33 @@ a:hover {
   .room-heading {
     height: 55px;
   }
+  .room__prev-btn {
+    position: absolute;
+    left: 50px;
+    top: 204px;
+    width: 24px;
+    height: 42px;
+    border: none; 
+    background: url('../images/prev_white.svg');
+    background-size: 24px 42px;
+  }
+  .room__next-btn {
+    position: absolute;
+    left: 335px;
+    top: 204px;
+    width: 24px;
+    height: 42px;
+    border: none; 
+    background: url('../images/next_white.svg') ;
+    background-size: 24px 42px;
+  }
   .awards-title {
     left: 125px;
-    top: 4433px;
+    top: 3175px;
   }
   .certificates-slider {
     left: 138px;
-    top: 4479px;
+    top: 3225px;
     width: 130px;
     height: 185px;
     overflow: hidden;
@@ -2592,7 +2614,7 @@ a:hover {
   .prev-btn {
     position: absolute;
     left: 78px;
-    top: 4540px;
+    top: 3290px;
     width: 24px;
     height: 42px;
     border: none; 
@@ -2602,7 +2624,7 @@ a:hover {
   .next-btn {
     position: absolute;
     left: 308px;
-    top: 4540px;
+    top: 3290px;
     width: 24px;
     height: 42px;
     border: none; 
@@ -2611,7 +2633,7 @@ a:hover {
   }
   .footer {
     max-width: 415px;
-    top: 4705px;
+    top: 3500px;
     height: 134px;
   }
   /********************** OUR LABORATORY ******************/
@@ -3117,7 +3139,7 @@ a:hover {
   /********************** ABOUT US ************************/
   .container {
     max-width: 375px;
-    height: 4698px;
+    height: 3489px;
     overflow: hidden;
   }
   .first-screen {
@@ -3388,7 +3410,7 @@ a:hover {
     max-width: 375px;
     left: 0px;
     top: 2500px;
-    height: 1736px;
+    height: 475px;
     width: 375px;
     background: url('../images/bg375.png') no-repeat;
     background-size: 375px 1736px;
@@ -3400,28 +3422,34 @@ a:hover {
   .advantages-container {
     left: 85px;
   }
+  .room__prev-btn {
+    left: 35px;
+  }
+  .room__next-btn {
+    left: 310px;
+  }
   .awards-title {
     left: 105px;
-    top: 4283px;
+    top: 3025px;
   }
   .certificates-slider {
     left: 118px;
-    top: 4329px;
+    top: 3075px;
     width: 130px;
     height: 185px;
   }
   .prev-btn {
     left: 58px;
-    top: 4390px;
+    top: 3140px;
   }
   .next-btn {
     left: 288px;
-    top: 4390px;
+    top: 3140px;
   }
   .footer {
     max-width: 375px;
     left: 0;
-    top: 4564px;
+    top: 3360px;
     height: 134px;
   }
   /********************** OUR LABORATORY ******************/
@@ -3732,7 +3760,7 @@ a:hover {
   /********************** ABOUT US ************************/
   .container {
     max-width: 320px;
-    height: 4698px;
+    height: 3489px;
     overflow: hidden;
   }
   .menu {
@@ -3797,6 +3825,12 @@ a:hover {
   }
   .advantages-container {
     left: 55px;
+  }
+  .room__prev-btn {
+    left: 15px;
+  }
+  .room__next-btn {
+    left: 275px;
   }
   .awards-title {
     left: 80px;

@@ -140,7 +140,7 @@ a:hover {
   line-height: 16px;
 }
 .about-us__text {
-  width: 363px;
+  width: 380px;
   height: 359px;
   left: 1066px;
   top: 1208px;
@@ -965,7 +965,6 @@ a:hover {
   background: url('../images/company/Homesland.png') center;
   border: none;
 }
-
 .filters-title {
   position: absolute;
   left: 395px;
@@ -1068,7 +1067,9 @@ a:hover {
   padding: 18px 5px;
   color: #000;
 }
-
+p.des {
+  display: none;
+}
 .more-details {
   border: 1px solid #000000;
   border-radius: 10px;

@@ -156,16 +156,20 @@ export default class Products {
         // if click on card image, set product name and image 
         if (target.className === 'card-image') {
           let cardTitle = target.nextElementSibling.children[0].children[0].textContent;
+          let cardDesc = target.nextElementSibling.children[0].children[1].textContent;
           let cardImage = target.src;
 
           localStorage.setItem('productTitle', cardTitle);
+          localStorage.setItem('productDesc', cardDesc);
           localStorage.setItem('productImage', cardImage);
           location.href = 'goodsDetails.html';
         } else if (target.className === 'more-details-text') {
           let cardTitle = target.closest('.card-text').children[0].children[0].textContent;
+          let cardDesc = target.closest('.card-text').children[0].children[1].textContent;
           let cardImage = target.closest('.card').children[0].src;
 
           localStorage.setItem('productTitle', cardTitle);
+          localStorage.setItem('productDesc', cardDesc);
           localStorage.setItem('productImage', cardImage);
           location.href = 'goodsDetails.html';
         }

@@ -133,9 +133,18 @@ export default class Products {
       roomBtn.addEventListener("click", (e) => {
         let target = e.target;
         if (target.className == "room-image") {
-          let roomTitle = target.nextElementSibling.children[0].textContent;
-          sessionStorage.setItem("roomTitle", roomTitle);
-          location.href = "products.html";
+          if (document.documentElement.clientWidth <= 415) {
+              this.filterSection === 'room-filter'
+              this.filterTabs.children[1].style.display = "flex";
+              this.filterTabs.children[0].style.display = "none";
+              let roomTitle = target.nextElementSibling.children[0].textContent;
+              sessionStorage.setItem("roomTitle", roomTitle);
+
+          } else {
+            let roomTitle = target.nextElementSibling.children[0].textContent;
+            sessionStorage.setItem("roomTitle", roomTitle);
+            location.href = "products.html";
+          }
         } else if (target.className === "room-btn-title") {
           let roomTitle = target.closest(".card-room").children[1].children[0].textContent;
           sessionStorage.setItem("roomTitle", roomTitle);

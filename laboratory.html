@@ -1,91 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wooji - refreshing life</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wooji - refreshing life</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <div class="laboratory-container">
+      <header class="laboratory-page">
+        <a href="index.html" class="home_link">
+          <img src="images/logo-img.svg" alt="logo img" class="logo"/>
+        </a>
+        <nav class="menu">
+          <a href="index.html">회사소개</a>
+          <a href="laboratory.html" class="acrive">연구개발</a>
+          <a href="products.html">제품소개</a>
+          <a href="contacts.html">오시는 길</a>
+        </nav>
+      </header>
+      <!-- /. end first screen -->
 
-<body>
-  <div class="laboratory-container">
-    <header class="laboratory-page">
-      <div class="laboratory-ellipse">
-        <img src="images/laboratory.png" alt="lab main img" class="lab-main-img">
-      </div>
-      <a href="index.html" class="home_link"><img src="images/logo-img.svg" alt="logo img" class="logo"></a>
-      <!-- <nav class="sidebar-menu">
-        <span class="menu-title"></span>
-        <span class="menu-btn"></span>
-        <div class="menu-link">
-          <a href="index.html" class="menu__about-link">about us</a>
-          <a href="laboratory.html" class="menu__about-link">our laboratory</a>
-          <a href="products.html" class="menu__about-link">products</a>
-          <a href="contacts.html" class="menu__about-link">contacts</a>
+      <section class="lab-main-container">
+        <h1 class="lab-title">우리 실험실</h1>
+        <p class="lab-title__text">
+          탄닌과 카테킨 성분을 응용한 제품을 생산합니다.</br> 
+          타닌(tannin)은 아주 떫은 맛을 내는 폴리페놀의 일종으로써</br>
+          식물에 의해 합성되며 단백질과 결합하여 침전시킨다.</br>
+          원래 동물의 껍질을 가죽으로 만들때 방부제로 쓰이는</br> 
+          물질을 지칭하는 말이었으나 충분한 하이드록실기 등을</br> 
+          가지고서 단백질이나 다른 고분자와 강하게 결합하는</br> 
+          커다란 폴리페놀계 화합물을 총칭한다.</br> 
+          타닌의 분자량은 500부터 20,000이 넘는 것도 있다.</br> 
+          식물체 내에서 미생물, 곤충, 포유동물 등에 대한</br> 
+          방어기능을 갖는다. 또한, 타닌이 많이 있는 음식이나</br> 
+          타닌을 많이 섭취하면 설사를 할 수 있으니 조심해야 한다.</br> 
+          대표적인 음식(음료)가 녹차이다.
+        </p>
+        <img src="images/water-drop.svg" alt="water-drop-img" class="water-drop__img">
+        <span class="water-drop__text">
+          습기제거제는 염화칼슘을 원료로 만들</br>
+          어진 제품이다.</br>
+          염화칼슘의 조해성이라는 성질을 이용</br>
+          해 주변의 물을 흡습한다.
+        </span>
+        <span class="attachment__text">첨부</span>
+        <button class="attachment__btn">
+          <span class="attachment__btn-text">시험성적서</span>
+        </button>  
+        <img src="images/flower.svg" alt="flower-img" class="flower__img">
+        <h3 class="flower__title">방향제</h3>
+        <span class="flower__text">
+          알러지 유발물질을 최소화하고, 발암물질을 사용하지 않아서 안전한 제품을 만듭니다.
+        </span>
+        <img src="images/chemical.png" alt="chemical-img" class="chemical__img">
+        <img src="images/lab_2.png" alt="lab-img" class="lab__img">  
+      </section>
+
+      <footer class="lab-footer">
+        <a href="index.html" class="contacts-footer_link">
+          <img src="images/footer-logo.svg" alt="footer logo img"/>
+        </a>
+        <span class="contact-phones">+82-31-351-7636~8 +82-31-351-7636</span>
+        <span class="contacts-address">경기도 화성시 장안면 덕다길 50번길 47</span>
+        <div class="contacts-footer-menu">
+          <a href="index.html">회사소개</a>
+          <a href="laboratory.html">연구개발</a>
+          <a href="products.html">제품소개</a>
+          <a href="contacts.html">오시는 길</a>
         </div>
-      </nav>     -->
-      <nav class="menu">
-        <a href="index.html">회사소개</a>
-        <a href="laboratory.html" class="active">연구개발</a>
-        <a href="products.html">제품소개</a>
-        <a href="contacts.html">오시는 길</a>
-      </nav>
-      <h1 class="laboratory-title">연구개발</h1>
-      <p class="laboratory-title-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-        fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
-        est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-        delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
-      </p>
-    </header>
-    <!-- /.end first-screen -->
-
-    <section class="lab-info-block__first">
-      <img src="images/lab_1.png" alt="lab-img-first" class="lab-img-first">
-      <p class="lab-lorem lab-text-first">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-        fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
-        est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-        delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
-        repellat</p>
-    </section>
-    <!-- /.end info block first -->
-
-    <section class="lab-info-block__seconds">
-      <img src="images/lab_2.png" alt="lab-img-first" class="lab-img-second">
-      <p class="lab-lorem lab-text-second">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-        fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
-        est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-        delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
-        repellat</p>
-    </section>
-    <!-- /.end info block second -->
-
-    <footer class="lab-footer">
-      <a href="index.html" class="contacts-footer_link"><img src="images/footer-logo.svg" alt="footer logo img"></a>
-      <span class="contact-phones">+82-31-351-7636~8 +82-31-351-7636</span>
-      <span class="contacts-address">경기도 화성시 장안면 덕다길 50번길 47</span>
-      <div class="contacts-footer-menu">
-        <a href="index.html">회사소개</a>
-        <a href="laboratory.html">연구개발</a>
-        <a href="products.html"">제품소개</a>
-        <a href="contacts.html">오시는 길</a>
-      </div>
-    </footer>
-    <!-- end footer -->
-  </div>
-</body>
-
+      </footer>
+      <!-- end footer -->
+    </div>
+  </body>
 </html>

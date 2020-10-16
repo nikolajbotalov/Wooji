@@ -500,24 +500,8 @@ a:hover {
 .laboratory-container {
   position: relative;
   width: 1920;
-  height: 2047px;
+  height: 1157px;
   overflow: hidden;
-}
-.laboratory-ellipse {
-  position: absolute;
-  width: 1659px;
-  height: 1659px;
-  left: 874px;
-  top: -687px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.lab-main-img {
-  position: absolute;
-  width: 1046px;
-  height: 972px;
-  left: 5px;
-  top: 684px;
 }
 .home_link {
   position: absolute;
@@ -529,6 +513,126 @@ a:hover {
   box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
   border-radius: 0 0 30px 30px;
 }
+.lab-main-container {
+  position: absolute;
+  left: 395px;
+  top: 164px;
+}
+.lab-title {
+  position: absolute;
+  top: 35px;
+  width: 339px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #34A2D4;
+}
+.lab-title__text {
+  position: absolute;
+  top: 135px;
+  width: 365px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+.water-drop__img {
+  position: absolute;
+  top: 454px;
+}
+.water-drop__text {
+  position: absolute;
+  left: 130px;
+  top: 491px;
+  width: 250px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.attachment__text {
+  position: absolute;
+  left: 130px;
+  top: 588px;
+  width: 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.attachment__btn {
+  position: absolute;
+  left: 192px;
+  top: 580px;
+  width: 185px;
+  padding: 12px 52px;
+  background: #34A2D4;
+  box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
+  border: none;
+  border-radius: 20px;
+}
+.attachment__btn-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+}
+.flower__img {
+  position: absolute;
+  top: 681px;
+}
+.flower__title {
+  position: absolute;
+  left: 130px;
+  top: 690px;
+  width: 108px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #34A2D4;
+} 
+.flower__text {
+  position: absolute;
+  left: 130px;
+  top: 748px;
+  width: 250px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.chemical__img {
+  position: absolute;
+  left: 385px;
+}
+.lab__img {
+  position: absolute;
+  left: 427px;
+  top: 474px;
+  background-size: 704px 342px;
+}
+.lab-footer {
+  position: absolute;
+  width: 1920px;
+  height: 90px;
+  top: 1067px;
+  background: linear-gradient(17.66deg, #34A2D4 39.98%, #65B6DB 55.76%);
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+
+
+
+
 .logo {
   position: absolute;
   width: 130px;
@@ -562,127 +666,6 @@ a:hover {
 .menu a:active {
   color: #34A2D4;
 }
-.laboratory-title {
-  position: absolute;
-  width: 457px;
-  height: 168px;
-  left: 395px;
-  top: 248px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 84px;
-  text-transform: uppercase;
-  color: #34A2D4;
-}
-.laboratory-title-text {
-  position: absolute;
-  width: 459px;
-  height: 234px;
-  left: 395px;
-  top: 466px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000;
-}
-/* end laboratory f page */
-
-.lab-img-first {
-  position: absolute;
-  width: 651px;
-  height: 435px;
-  left: 395px;
-  top: 803px;
-  border-radius: 20px;
-}
-.lab-img-second {
-  position: absolute;
-  width: 651px;
-  height: 433px;
-  left: 874px;
-  top: 1453px;
-  border-radius: 20px;
-}
-.lab-lorem {
-  position: absolute;
-  width: 459px;
-  height: 234px;
-  padding: 43px 48px 27px 48px;
-  overflow: hidden;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
-  border-radius: 20px;
-}
-.lab-text-first {
-  left: 970px;
-  top: 1028px;
-  background: #34A2D4;
-  color: #FFFFFF;
-}
-.lab-text-second {
-  left: 415px;
-  top: 1413px;
-  background: #FFFFFF;
-  color: #000;
-}
-/* end lab info block */
-
-.lab-footer {
-  position: absolute;
-  width: 1920px;
-  height: 90px;
-  top: 1957px;
-  background: linear-gradient(17.66deg, #34A2D4 39.98%, #65B6DB 55.76%);
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
-}
-.lab-footer_link {
-  position: absolute;
-  width: 106px;
-  height: 42px;
-  left: 428px;
-  top: 23px;
-}
-.lab-contact-phones {
-  position: absolute;
-  width: 130px;
-  height: 32px;
-  left: 620px;
-  top: 35px;
-}
-.lab-address {
-  position: absolute;
-  width: 260px;
-  height: 32px;
-  left: 777px;
-  top: 31px;
-}
-.lab-footer-menu {
-  position: absolute;
-  left: 1066px;
-  top: 31px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.lab-footer-menu a {
-  padding: 2px 37px 2px 0;
-  text-decoration: none;
-  color: #FFFFFF;
-}
-/* end footer */ 
 
 
 /*********************************** CONTACTS PAGE ***********************************/
@@ -1085,8 +1068,6 @@ p.des {
   text-align: center;
   color: #000;
 }
-
-
 .products-footer {
   display: none;
   position: fixed;
@@ -1473,35 +1454,6 @@ p.des {
     width: 350px;
     height: 550px;
   }
-  /********************** OUR LABORATORY ******************/
-  .laboratory-container {
-    max-width: 1366px;
-  }
-  .laboratory-ellipse {
-    left: 581px;
-  }
-  .laboratory-title {
-    left: 132px;
-  }
-  .laboratory-title-text {
-    left: 132px;
-  }
-  .lab-img-first {
-    left: 132px;
-  }
-  .lab-text-first {
-    left: 693px;
-    top: 1048px;
-  }
-  .lab-text-second {
-    left: 132px;
-  }
-  .lab-img-second {
-    left: 583px;
-  }
-  .lab-footer {
-    max-width: 1366px;
-  }
   .horizontal-line-1983 {
     left: 132px;
   }
@@ -1559,7 +1511,19 @@ p.des {
   }
   .footer {
     max-width: 1366px;
-    
+  }
+  /********************** OUR LABORATORY ******************/
+  .laboratory-container {
+    max-width: 1366px;
+  }
+  .lab-main-container {
+    left: 132px;
+  }
+  .lab-title__text {
+    width: 370px;
+  }
+  .lab-footer {
+    max-width: 1366px;
   }
   /********************** PRODUCTS PAGE *******************/
   .products-container {
@@ -1977,65 +1941,8 @@ p.des {
     max-width: 768px;
     height: 1875px;
   }
-  .lab-main-img {
-    width: 625px;
-    height: 600px;
-    left: 0px;
-    top: 300px;
-    background: url('../images/laboratory-768.png');
-  }
-  .laboratory-ellipse {
-    width: 1000px;
-    height: 895px;
-    left: 185px;
-    top: -374px; 
-  }
-  .laboratory-title {
-    left: 72px;
-    top: 395px;
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .laboratory-title-text {
-    left: 72px;
-    top: 520px;
-    width: 384px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .lab-img-first {
-    left: 72px;
-    top: 769px;
-    width: 384px;
-    height: 257px;
-  }
-  .lab-text-first {
-    left: 325px;
-    top: 966px;
-    width: 280px;
-    height: 260px;
-    font-size: 12px;
-    line-height: 14px;
-    padding: 24px 25px 15px 30px;
-  }
-  .lab-text-second {
-    left: 72px;
-    top: 1281px;
-    width: 330px;
-    font-size: 12px;
-    line-height: 14px;
-    padding: 24px 25px 15px 30px;
-  }
-  .lab-img-second {
-    width: 386px;
-    height: 257px;
-    left: 274px;
-    top: 1444px;
-  }
-  .lab-footer {
-    max-width: 768px;
-    height: 119px;
-    top: 1756px;
+  .lab-main-container {
+    left: 15px;
   }
   .contacts-footer_link {
     left: 47px;
@@ -2399,8 +2306,8 @@ p.des {
     height: 120px;
   }
   .lorem {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 14px;
   }
   .history__title {
     left: 0;

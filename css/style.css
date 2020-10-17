@@ -130,6 +130,7 @@ a:hover {
   left: 1066px;
   top: 1151px;
   color: #34A2D4;
+  word-wrap: none;
 }
 .lorem {
   position: absolute;
@@ -137,10 +138,9 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 32px;
 }
 .about-us__text {
-  width: 380px;
   height: 359px;
   left: 1066px;
   top: 1208px;
@@ -1713,19 +1713,17 @@ p.des {
     line-height: 28px;
   }
   .about-us__title { 
-    left: 375px;
+    left: 350px;
     top: 563px;
   }
   .lorem {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 20px;
   }
   .about-us__text {
-    left: 375px;
+    left: 350px;
     top: 602px;
-    width: 270px;
     height: 168px;
-    overflow: hidden;
   }
   .history__title {
     left: 77px;
@@ -2302,12 +2300,12 @@ p.des {
   .about-us__text {
     left: 0;
     top: 278px;
-    width: 256px;
+    width: 275px;
     height: 120px;
   }
   .lorem {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 18px;
   }
   .history__title {
     left: 0;
@@ -2921,6 +2919,7 @@ p.des {
   .goods-title {
     top: 507px;
     left: 0;
+    width: 255px;
     font-size: 18px;
     line-height: 21px;
   }
@@ -2934,7 +2933,7 @@ p.des {
   .goods-description {
     top: 608px;
     left: 0;
-    width: 256px;
+    width: 255px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -3153,14 +3152,13 @@ p.des {
   }
   .lorem {
     width: 256px;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 18px;
   }
   .about-us__text {
     left: 0px;
     top: 283px;
     height: 120px;
-    overflow: hidden;
   }
   .years {
     left: 0px;
@@ -3556,7 +3554,6 @@ p.des {
   .goods-description {
     left: 0px;
     top: 505px;
-    width: 256px;
     font-size: 10px;
     line-height: 12px;
   }

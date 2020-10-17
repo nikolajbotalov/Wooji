@@ -24,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const productDescription = new Description();
   productDescription.getProduct();
-
 });
 
 

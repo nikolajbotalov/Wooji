@@ -14,9 +14,9 @@ export default class Description {
       return false;
     } else {
       // productName & productImage gets value from localstorage
-      this.productName.textContent = localStorage.getItem('productTitle');
-      this.productDesc.textContent = localStorage.getItem('productDesc');
-      this.productImage.src = localStorage.getItem('productImage');
+      this.productName.textContent = sessionStorage.getItem('productTitle');
+      this.productDesc.innerHTML = sessionStorage.getItem('productDesc');
+      this.productImage.src = sessionStorage.getItem('productImage');
     }
 
     if (this.backBtn === null) {

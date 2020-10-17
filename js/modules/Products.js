@@ -5,36 +5,39 @@
  */
 export default class Products {
   constructor() {
-    this.companyBtns = document.querySelector(".companies");
-    this.products = document.querySelectorAll(".cards-products");
-    this.checkboxes = document.querySelectorAll("input");
-    this.filterBlocks = document.querySelectorAll(".filter");
-    this.largeDesiccant = document.querySelector("div.large-desiccant");
-    this.desiccant = document.querySelector("div.desiccant");
-    this.deodorant = document.querySelector("div.deodorant");
-    this.flavor = document.querySelector("div.flavor");
-    this.compound = document.querySelector("div.compound");
-    this.fruit_fly_trap = document.querySelector("div.fruit_fly_trap");
-    this.kitchen = document.querySelector("div.kitchen");
-    this.wardrobe = document.querySelector("div.wardrobe");
-    this.bathroom = document.querySelector("div.bathroom");
-    this.car = document.querySelector("div.car");
-    this.livingRoom = document.querySelector("div.living-room");
-    this.local = document.createElement("a");
-    this.git = document.createElement("a");
-    this.filterSection = document.querySelector(".filtres");
-    this.filterTabs = document.querySelector(".filter-tabs");
+    this.companyBtns = document.querySelector('.companies');
+    this.products = document.querySelectorAll('.cards-products');
+    this.checkboxes = document.querySelectorAll('input');
+    this.filterBlocks = document.querySelectorAll('.filter');
+    this.largeDesiccant = document.querySelector('div.large-desiccant');
+    this.desiccant = document.querySelector('div.desiccant');
+    this.deodorant = document.querySelector('div.deodorant');
+    this.flavor = document.querySelector('div.flavor');
+    this.compound = document.querySelector('div.compound');
+    this.fruit_fly_trap = document.querySelector('div.fruit_fly_trap');
+    this.kitchen = document.querySelector('div.kitchen');
+    this.wardrobe = document.querySelector('div.wardrobe');
+    this.bathroom = document.querySelector('div.bathroom');
+    this.car = document.querySelector('div.car');
+    this.livingRoom = document.querySelector('div.living-room');
+    this.local = document.createElement('a');
+    this.git = document.createElement('a');
+    this.filterSection = document.querySelector('.filtres');
+    this.filterTabs = document.querySelector('.filter-tabs');
   }
 
   /**
    * @param {string} product - class name of company's product;
    */
   showProducts(product) {
-    this.hideCompanies();
-    let selector = "." + product.slice(10);
+    let selector = '.' + product;
     const company = document.querySelector(selector);
+
+    this.hideCompanies();
+    this.cancelChecked();
+
     if (company !== null) {
-      company.style.display = "flex";
+      company.style.display = 'flex';
     } else {
       return false;
     }
@@ -51,9 +54,8 @@ export default class Products {
     this.cancelChecked();
 
     if (sortedProducts !== null) {
-      sortedProducts.style.display = "flex";
+      sortedProducts.style.display = 'flex';
     } else {
-      console.log("false");
       return false;
     }
 
@@ -65,7 +67,7 @@ export default class Products {
    */
   hideCompanies() {
     this.products.forEach((product) => {
-      product.style.display = "none";
+      product.style.display = 'none';
     });
   }
 
@@ -78,6 +80,16 @@ export default class Products {
     });
   }
 
+  showFilterBlock() {
+    this.filterTabs.children[0].style.display = 'flex'
+    this.filterTabs.children[1].style.display = 'none';
+  }
+
+  showRoomBlock() {
+    this.filterTabs.children[0].style.display = 'none';
+    this.filterTabs.children[1].style.display = 'flex';
+  }
+
   /**
    * method set to display first checkbox block by default
    * click to filter's name show checkboxes block
@@ -86,33 +98,58 @@ export default class Products {
     if (this.filterSection === null) {
       return false;
     } else {
-      this.filterTabs.children[1].style.display = "none";
-      this.filterSection.addEventListener("click", (e) => {
+      if (sessionStorage.getItem('roomTitle') !== null) {
+        this.showRoomBlock();
+      } else {
+        this.showFilterBlock();
+      }
+
+      this.filterSection.addEventListener('click', (e) => {
         let target = e.target;
 
-        if (target.className === "filters-title") {
-          this.filterTabs.children[0].style.display = "flex";
-          this.filterTabs.children[1].style.display = "none";
-        } else if (target.className === "room-filter") {
-          this.filterTabs.children[1].style.display = "flex";
-          this.filterTabs.children[0].style.display = "none";
+        if (target.className === 'filters-title') {
+          this.showFilterBlock();
+        } else if (target.className === 'room-filter') {
+          this.showRoomBlock();
         }
       });
     }
   }
 
   /**
-   * method check 
+   * method check current filter products
    */
   checkPage() {
-    if (sessionStorage.getItem("roomTitle") === null) {
+    if (sessionStorage.getItem('roomTitle') === null) {
       this.hideCompanies();
       this.cancelChecked();
+    } else if (sessionStorage.getItem('roomTitle') === 'diaso') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'gnk') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'its') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'lg') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'natural_organic') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'scott') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'sandokkaebi') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'sdj') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'sugar_bubble') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'life_workshop') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
+    } else if (sessionStorage.getItem('roomTitle') === 'homesland') {
+      this.showProducts(sessionStorage.getItem('roomTitle'));
     } else {
       this.checkboxes.forEach((checkbox) => {
         let checkboxName = checkbox.nextElementSibling.textContent;
 
-        if (sessionStorage.getItem("roomTitle") === checkboxName) {
+        if (sessionStorage.getItem('roomTitle') === checkboxName) {
           let checkboxClass = checkbox.nextElementSibling.className;
           this.showSortProduct(checkboxClass, checkbox);
         }
@@ -126,29 +163,25 @@ export default class Products {
   init() {
     // if loc.href = index.html and click to room card,
     // room title save to localStorage
-    this.local = "http://127.0.0.1:5500/index.html";
-    this.git = "https://nikolajbotalov.github.io/Wooji/index.html";
-    if (location.href === this.local || location.href === this.git) {
-      const roomBtn = document.querySelector(".advantages-container");
-      roomBtn.addEventListener("click", (e) => {
-        let target = e.target;
-        if (target.className == "room-image") {
-          if (document.documentElement.clientWidth <= 415) {
-              this.filterSection === 'room-filter'
-              this.filterTabs.children[1].style.display = "flex";
-              this.filterTabs.children[0].style.display = "none";
-              let roomTitle = target.nextElementSibling.children[0].textContent;
-              sessionStorage.setItem("roomTitle", roomTitle);
+    this.local = 'http://127.0.0.1:5500/index.html';
+    this.git = 'https://nikolajbotalov.github.io/Wooji/index.html';
 
-          } else {
-            let roomTitle = target.nextElementSibling.children[0].textContent;
-            sessionStorage.setItem("roomTitle", roomTitle);
-            location.href = "products.html";
-          }
-        } else if (target.className === "room-btn-title") {
-          let roomTitle = target.closest(".card-room").children[1].children[0].textContent;
-          sessionStorage.setItem("roomTitle", roomTitle);
-          location.href = "products.html";
+    if (location.href === this.local || location.href === this.git) {
+      const roomBtn = document.querySelector('.advantages-container');
+
+      roomBtn.addEventListener('click', (e) => {
+        let target = e.target;
+
+        if (target.className == 'room-image') {
+          let roomTitle = target.nextElementSibling.children[0].textContent;
+
+          sessionStorage.setItem('roomTitle', roomTitle);
+          location.href = 'products.html';
+        } else if (target.className === 'room-btn-title') {
+          let roomTitle = target.closest('.card-room').children[1].children[0].textContent;
+
+          sessionStorage.setItem('roomTitle', roomTitle);
+          location.href = 'products.html';
         }
       });
     }
@@ -161,73 +194,77 @@ export default class Products {
 
     // Сlick on the button, the company's products are displayed
     if (this.companyBtns !== null) {
-      this.companyBtns.addEventListener("click", (e) => {
+      this.companyBtns.addEventListener('click', (e) => {
         let target = e.target;
-        let selector = target.className.slice(10);
 
-        this.showProducts(target.className);
-        localStorage.setItem("currentProducts", selector);
+        sessionStorage.setItem('roomTitle', target.className.slice(10));
+        this.showProducts(target.className.slice(10));
       });
     }
 
     // Click on product card
     this.products.forEach((productCard) => {
-      productCard.addEventListener("click", (e) => {
+      productCard.addEventListener('click', (e) => {
         let target = e.target;
 
-        // if click on card image, set product name and image
-        if (target.className === "card-image") {
+        // if click on card image, set product name, desc and image
+        if (target.className === 'card-image') {
           let cardTitle = target.nextElementSibling.children[0].children[0].textContent;
-          let cardDesc = target.nextElementSibling.children[0].children[1].textContent;
+          let cardDesc = target.nextElementSibling.children[0].children[1].innerHTML;
           let cardImage = target.src;
 
-          localStorage.setItem("productTitle", cardTitle);
-          localStorage.setItem("productDesc", cardDesc);
-          localStorage.setItem("productImage", cardImage);
-          location.href = "goodsDetails.html";
-        } else if (target.className === "more-details-text") {
-          let cardTitle = target.closest(".card-text").children[0].children[0].textContent;
-          let cardDesc = target.closest(".card-text").children[0].children[1].textContent;
-          let cardImage = target.closest(".card").children[0].src;
+          sessionStorage.setItem('productTitle', cardTitle);
+          sessionStorage.setItem('productDesc', cardDesc);
+          sessionStorage.setItem('productImage', cardImage);
+          location.href = 'goodsDetails.html';
+        } else if (target.className === 'more-details-text') {
+          // if click on more details button, set product name, desc and image
+          let cardTitle = target.closest('.card-text').children[0].children[0].textContent;
+          let cardDesc = target.closest('.card-text').children[0].children[1].textContent;
+          let cardImage = target.closest('.card').children[0].src;
 
-          localStorage.setItem("productTitle", cardTitle);
-          localStorage.setItem("productDesc", cardDesc);
-          localStorage.setItem("productImage", cardImage);
-          location.href = "goodsDetails.html";
+          sessionStorage.setItem('productTitle', cardTitle);
+          sessionStorage.setItem('productDesc', cardDesc);
+          sessionStorage.setItem('productImage', cardImage);
+          location.href = 'goodsDetails.html';
         }
       });
     });
 
     //
     this.checkboxes.forEach((checkbox) => {
-      if (checkbox.nextElementSibling.className === "large-desiccant") {
-        checkbox.nextElementSibling.textContent += ` (${this.largeDesiccant.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "desiccant") {
-        checkbox.nextElementSibling.textContent += ` (${this.desiccant.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "deodorant") {
-        checkbox.nextElementSibling.textContent += ` (${this.deodorant.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "flavor") {
-        checkbox.nextElementSibling.textContent += ` (${this.flavor.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "compound") {
-        checkbox.nextElementSibling.textContent += ` (${this.compound.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "fruit_fly_trap") {
-        checkbox.nextElementSibling.textContent += ` (${this.fruit_fly_trap.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "kitchen") {
-        checkbox.nextElementSibling.textContent += ` (${this.kitchen.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "wardrobe") {
-        checkbox.nextElementSibling.textContent += ` (${this.wardrobe.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "bathroom") {
-        checkbox.nextElementSibling.textContent += ` (${this.bathroom.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "car") {
-        checkbox.nextElementSibling.textContent += ` (${this.car.childElementCount})`;
-      } else if (checkbox.nextElementSibling.className === "living-room") {
-        checkbox.nextElementSibling.textContent += ` (${this.livingRoom.childElementCount})`;
+      let filterName = checkbox.nextElementSibling;
+      let filterClass = filterName.className; 
+
+      if (filterClass === 'large-desiccant') {
+        filterName.textContent += ` (${this.largeDesiccant.childElementCount})`;
+      } else if (filterClass === 'desiccant') {
+        filterName.textContent += ` (${this.desiccant.childElementCount})`;
+      } else if (filterClass === 'deodorant') {
+        filterName.textContent += ` (${this.deodorant.childElementCount})`;
+      } else if (filterClass === 'flavor') {
+        filterName.textContent += ` (${this.flavor.childElementCount})`;
+      } else if (filterClass === 'compound') {
+        filterName.textContent += ` (${this.compound.childElementCount})`;
+      } else if (filterClass === 'fruit_fly_trap') {
+        filterName.textContent += ` (${this.fruit_fly_trap.childElementCount})`;
+      } else if (filterClass === 'kitchen') {
+        filterName.textContent += ` (${this.kitchen.childElementCount})`;
+      } else if (filterClass === 'wardrobe') {
+        filterName.textContent += ` (${this.wardrobe.childElementCount})`;
+      } else if (filterClass === 'bathroom') {
+        filterName.textContent += ` (${this.bathroom.childElementCount})`;
+      } else if (filterClass === 'car') {
+        filterName.textContent += ` (${this.car.childElementCount})`;
+      } else if (filterClass === 'living-room') {
+        filterName.textContent += ` (${this.livingRoom.childElementCount})`;
       }
 
-      checkbox.addEventListener("click", (e) => {
+      checkbox.addEventListener('click', (e) => {
         let target = e.target;
+
+        sessionStorage.setItem('roomTitle', filterName.textContent.split(' ')[0]);
         this.showSortProduct(target.nextElementSibling.className, checkbox);
-        localStorage.setItem("currentProducts", target.nextElementSibling.className);
       });
     });
   }

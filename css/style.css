@@ -628,11 +628,6 @@ a:hover {
   line-height: 16px;
   color: #FFFFFF;
 }
-
-
-
-
-
 .logo {
   position: absolute;
   width: 130px;
@@ -1341,7 +1336,6 @@ p.des {
 }
 
 /******************************** 1366  ******************************************/
-
 @media (max-width: 1366px) {
   /********************** ABOUT US ************************/
   .container {
@@ -1937,10 +1931,59 @@ p.des {
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
     max-width: 768px;
-    height: 1875px;
+    height: 1269px;
   }
   .lab-main-container {
-    left: 15px;
+    left: 77px;
+    top: 144px;
+  }
+  .lab-title {
+    top: 0;
+    font-size: 36px;
+    line-height: 42px;
+    width: 175px;
+  }
+  .lab-title__text {
+    top: 59px;
+    font-size: 12px;
+  }
+  .water-drop__img {
+    top: 353px;
+  }
+  .water-drop__text {
+    top: 353px;
+  }
+  .attachment__text {
+    top: 447px;
+  }
+  .attachment__btn {
+    top: 439px;
+  }
+  .flower__img {
+    top: 527px;
+  }
+  .flower__title {
+    top: 549px;
+  }
+  .flower__text {
+    top: 607px;
+  }
+  .chemical__img {
+    left: 315px;
+    top: 85px;
+    width: 330px;
+    height: 173px;
+  }
+  .lab__img {
+    left: 0;
+    top: 675px;
+    width: 625px;
+    height: 275px;
+  }
+  .lab-footer {
+    top: 1150px;
+    max-width: 768px;
+    height: 119px;
   }
   .contacts-footer_link {
     left: 47px;
@@ -2548,20 +2591,7 @@ p.des {
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
     max-width: 415px;
-    height: 1701px;
-  }
-  .laboratory-ellipse {
-    left: 15px;
-    width: 500px;
-    height: 500px;
-    top: -200px;
-  }
-  .lab-main-img {
-    left: 0px;
-    top: 200px;
-    width: 425px;
-    height: 300px;
-    background: url('../images/laboratory-415.png');
+    height: 1159px;
   }
   .home_link {
     left: 15px;
@@ -2604,66 +2634,73 @@ p.des {
     text-decoration: none;
     color: #fff;
   }
-  .laboratory-title {
-    left: 78px;
-    top: 303px;
-    width: 175px;
-    height: 56px;
+  .lab-main-container {
+    left: 65px;
+    top: 85px;
+  }
+  .lab-title {
     font-size: 24px;
     line-height: 28px;
   }
-  .laboratory-title-text {
-    left: 78px;
-    top: 369px;
-    width: 256px;
+  .lab-title__text {
+    top: 39px;
+  }
+  .chemical__img {
+    top: 325px;
+    left: 0;
+    width: 309px;
+    height: 162px;
+  }
+  .water-drop__img {
+    width: 70px;
+    height: 76px;
+    top: 525px;
+  }
+  .water-drop__text {
+    top: 525px;
     font-size: 10px;
-    line-height: 12px;
+    left: 112px;
   }
-  .lab-info-block__first {
-    position: absolute;
-    left: 78px;
-    top: 596px;
-    max-width: 256px;
-  }
-  .lab-img-first {
-    left: 0px;
-    top: 0px;
-    width: 256px;
-    height: 173px;
-  }
-  .lab-text-first {
-    left: 0px;
-    top: 135px;
-    width: 210px;
-    height: 260px;
+  .attachment__text {
+    top: 600px;
     font-size: 10px;
-    line-height: 12px;
-    padding: 24px 16px 15px 30px;
+    left: 112px;
   }
-  .lab-info-block__seconds {
-    position: absolute;
-    left: 78px;
-    top: 1072px;
-    max-width: 256px;
+  .attachment__btn {
+    left: 156px;
+    top: 600px;
+    width: 150px;
+    padding: 12px 42px;
   }
-  .lab-img-second {
-    left: 0px;
-    top: 0px;
-    width: 256px;
-    height: 173px;
+  .attachment__btn-text {
+    font-size: 12px;
   }
-  .lab-text-second {
-    left: 0px;
-    top: 135px;
-    width: 210px;
-    height: 260px;
+  .flower__img {
+    top: 670px;
+    width: 68px;
+    height: 68px;
+  }
+  .flower__title {
+    left: 112px;
+    top: 670px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .flower__text {
+    left: 112px;
+    top: 710px;
+    width: 200px;
     font-size: 10px;
-    line-height: 12px;
-    padding: 24px 16px 15px 30px;
+  }
+  .lab__img {
+    left: 0;
+    top: 757px;
+    width: 310px;
+    height: 150px;
   }
   .lab-footer {
+    top: 1025px;
     max-width: 415px;
-    top: 1567px;
     height: 134px;
   }
   .contacts-footer_link {
@@ -3364,13 +3401,7 @@ p.des {
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
     max-width: 375px;
-    height: 1700px;
-  }
-  .laboratory-ellipse {
-    left: 5px;
-    width: 500px;
-    height: 500px;
-    top: -225px;
+    height: 1159px;
   }
   .lab-main-img {
     left: 7px;
@@ -3402,62 +3433,12 @@ p.des {
     text-decoration: none;
     color: #fff;
   }
-  .laboratory-title {
-    left: 58px;
-    top: 303px;
-    width: 175px;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .laboratory-title-text {
-    left: 58px;
-    top: 369px;
-    width: 256px;
-    height: 185px;
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .lab-info-block__first {
-    left: 58px;
-    top: 596px;
-  }
-  .lab-img-first {
-    left: 0px;
-    top: 0px;
-    width: 256px;
-    height: 173px;
-  }
-  .lab-text-first {
-    left: 0px;
-    top: 135px;
-    width: 210px;
-    height: 260px;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 24px 16px 15px 30px;
-  }
-  .lab-info-block__seconds {
-    left: 58px;
-    top: 1072px;
-  }
-  .lab-img-second {
-    left: 0px;
-    top: 0px;
-    width: 256px;
-    height: 173px;
-  }
-  .lab-text-second {
-    left: 0px;
-    top: 135px;
-    width: 210px;
-    height: 260px;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 24px 16px 15px 30px;
+  .lab-main-container {
+    left: 35px;
   }
   .lab-footer {
     max-width: 375px;
-    top: 1567px;
+    top: 1025px;
     height: 134px;
   }
   .contacts-footer_link {
@@ -3756,20 +3737,14 @@ p.des {
   .laboratory-container {
     max-width: 320px;
   }
-  .laboratory-title {
-    left: 32px;
-  }
-  .laboratory-title-text {
-    left: 32px;
-  }
-  .lab-info-block__first {
-    left: 32px;
-  }
-  .lab-info-block__seconds {
-    left: 32px;
+  .lab-main-container {
+    left: 5px;
   }
   .contacts-footer_link {
     left: 32px;
+  }
+  .lab-title__text {
+    font-size: 11px;
   }
   .contact-phones {
     left: 32px;

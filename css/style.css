@@ -1497,6 +1497,9 @@ p.des {
     left: 132px;
     width: 1104px;
   }
+  .room-body {
+    margin: 0 50px;
+  }
   .awards-title {
     left: 625px;
   }

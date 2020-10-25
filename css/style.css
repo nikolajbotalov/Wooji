@@ -404,7 +404,7 @@ a:hover {
   color: #000;
 }
 .room-body {
-  margin: 0 auto;
+  margin: 0 50px;
 }
 .room-view-products-btn {
   height: 40px;
@@ -2511,7 +2511,7 @@ p.des {
     background-size: 415px 1736px;
   }
   .advantages__title {
-    left: 125px;
+    left: 175px;
     top: 36px;
     width: 175px;
   }
@@ -2530,6 +2530,9 @@ p.des {
   }
   .room-heading {
     height: 55px;
+  }
+  .room-body {
+    margin: 0 45px;
   }
   .room__prev-btn {
     position: absolute;
@@ -3362,7 +3365,7 @@ p.des {
     background-size: 375px 1736px;
   }
   .advantages__title {
-    left: 105px;
+    left: 145px;
     top: 36px;
   }
   .advantages-container {
@@ -3710,7 +3713,7 @@ p.des {
     background-size: 320px 1736px;
   }
   .advantages__title {
-    left: 75px;
+    left: 115px;
   }
   .advantages-container {
     left: 55px;

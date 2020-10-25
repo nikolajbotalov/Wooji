@@ -162,7 +162,9 @@ window.addEventListener('DOMContentLoaded', function () {
         } else if (target.className === 'room-view-products-btn') {
           let parent = target.parentNode.parentNode;
           let roomTitle = parent.children[1].children[0].textContent;
-          console.log(roomTitle);
+          
+          sessionStorage.setItem('roomTitle', roomTitle);
+          location.href = 'products.html';
         }
       });
     }

@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       roomBtnContainer.addEventListener('click', function(e) {
         let target = e.target;
-        
+        // console.log(target);
         if (target.className === 'room-image') {
           let roomTitle = target.nextElementSibling.children[0].textContent;
           
@@ -159,6 +159,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
           sessionStorage.setItem('roomTitle', roomTitle);
           location.href = 'products.html';
+        } else if (target.className === 'room-view-products-btn') {
+          let parent = target.parentNode.parentNode;
+          let roomTitle = parent.children[1].children[0].textContent;
+          console.log(roomTitle);
         }
       });
     }

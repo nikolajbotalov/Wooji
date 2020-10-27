@@ -516,7 +516,7 @@ a:hover {
 .lab-main-container {
   position: absolute;
   left: 395px;
-  top: 164px;
+  top: 100px;
 }
 .lab-title {
   position: absolute;
@@ -538,14 +538,26 @@ a:hover {
   font-size: 14px;
   line-height: 22px;
 }
+.lab-cert__section {
+  position: absolute;
+  left: 100px;
+  top: 425px;
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #34A2D4;
+}
 .water-drop__img {
   position: absolute;
-  top: 454px;
+  top: 575px;
 }
 .water-drop__text {
   position: absolute;
   left: 130px;
-  top: 491px;
+  top: 575px;
   width: 250px;
   font-style: normal;
   font-weight: normal;
@@ -555,7 +567,7 @@ a:hover {
 .attachment__text {
   position: absolute;
   left: 130px;
-  top: 588px;
+  top: 662px;
   width: 36px;
   font-style: normal;
   font-weight: normal;
@@ -565,13 +577,21 @@ a:hover {
 .attachment__btn {
   position: absolute;
   left: 192px;
-  top: 580px;
   width: 185px;
   padding: 12px 52px;
   background: #34A2D4;
   box-shadow: 0px 10px 18px rgba(52, 162, 212, 0.25);
   border: none;
   border-radius: 20px;
+}
+.cert-one {
+  top: 500px;
+}
+.cert-two {
+  top: 650px;
+}
+.cert-three {
+  top: 825px;
 }
 .attachment__btn-text {
   font-style: normal;
@@ -582,12 +602,12 @@ a:hover {
 }
 .flower__img {
   position: absolute;
-  top: 681px;
+  top: 770px;
 }
 .flower__title {
   position: absolute;
   left: 130px;
-  top: 690px;
+  top: 720px;
   width: 108px;
   font-style: normal;
   font-weight: bold;
@@ -598,7 +618,7 @@ a:hover {
 .flower__text {
   position: absolute;
   left: 130px;
-  top: 748px;
+  top: 770px;
   width: 250px;
   font-style: normal;
   font-weight: normal;
@@ -612,7 +632,7 @@ a:hover {
 .lab__img {
   position: absolute;
   left: 427px;
-  top: 474px;
+  top: 515px;
   background-size: 704px 342px;
 }
 .lab-footer {

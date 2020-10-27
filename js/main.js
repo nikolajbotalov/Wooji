@@ -147,7 +147,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
       roomBtnContainer.addEventListener('click', function(e) {
         let target = e.target;
-        // console.log(target);
         if (target.className === 'room-image') {
           let roomTitle = target.nextElementSibling.children[0].textContent;
           
@@ -213,11 +212,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function checkActivefilter() {
     let roomTitle = sessionStorage.getItem('roomTitle');
-    // let filterNameArr = ['diaso', 'gnk', 'its', 'lg', 'natural_organic']; 
-
-    // if (roomTitle || filterNameArr) {
-    //   showProducts(roomTitle);
-    // } else 
 
     if (sessionStorage.getItem('roomTitle') === null) {
       hideCompanies();
@@ -309,6 +303,7 @@ window.addEventListener('DOMContentLoaded', function () {
   for (let i = 0; i < products.length; i++) {
     products[i].addEventListener('click', function(e) {
       let target = e.target;
+
       if (target.className === 'card-image') {
         let cardTitle = target.nextElementSibling.children[0].children[0].textContent;
         let cardDesc = target.nextElementSibling.children[0].children[1].innerHTML;
@@ -319,20 +314,21 @@ window.addEventListener('DOMContentLoaded', function () {
         sessionStorage.setItem('productImage', cardImage);
         location.href = 'goodsDetails.html';
       } else if (target.className === 'more-details-text') {
-        let parent = target.parentNode.parentNode.parentNode.nextElementSibling;
-        let cardTitle = parent.children[1].children[0].children[0].textContent;
-        let cardDesc = parent.children[1].children[0].children[1].textContent;
-        let cardImage = parent.children[0].src;
+        let parent = target.parentNode.parentNode.parentNode;
+        let cardTitle = parent.children[0].children[0].textContent;
+        let cardDesc = parent.children[0].children[1].textContent;
+        let cardImage = parent.parentNode.children[0].src;
         
         sessionStorage.setItem('productTitle', cardTitle);
         sessionStorage.setItem('productDesc', cardDesc);
         sessionStorage.setItem('productImage', cardImage);
         location.href = 'goodsDetails.html';
       } else if (target.className === 'more-details') {
-        let parent = target.parentNode.parentNode.parentNode.nextElementSibling;
+        let parent = target.parentNode.parentNode.parentNode;
         let cardTitle = parent.children[1].children[0].children[0].textContent;
         let cardDesc = parent.children[1].children[0].children[1].textContent;
         let cardImage = parent.children[0].src;
+        console.log(cardImage)
         
         sessionStorage.setItem('productTitle', cardTitle);
         sessionStorage.setItem('productDesc', cardDesc);

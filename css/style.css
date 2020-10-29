@@ -540,8 +540,8 @@ a:hover {
 }
 .lab-cert__section {
   position: absolute;
-  left: 100px;
-  top: 425px;
+  left: 130px;
+  top: 510px;
   width: 200px;
   font-style: normal;
   font-weight: bold;
@@ -552,12 +552,12 @@ a:hover {
 }
 .water-drop__img {
   position: absolute;
-  top: 575px;
+  top: 560px;
 }
 .water-drop__text {
   position: absolute;
   left: 130px;
-  top: 575px;
+  top: 560px;
   width: 250px;
   font-style: normal;
   font-weight: normal;
@@ -567,7 +567,7 @@ a:hover {
 .attachment__text {
   position: absolute;
   left: 130px;
-  top: 662px;
+  top: 647px;
   width: 36px;
   font-style: normal;
   font-weight: normal;
@@ -585,10 +585,11 @@ a:hover {
   border-radius: 20px;
 }
 .cert-one {
-  top: 500px;
+  left: 100px;
+  top: 425px;
 }
 .cert-two {
-  top: 650px;
+  top: 635px;
 }
 .cert-three {
   top: 825px;
@@ -2617,7 +2618,7 @@ p.des {
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
     max-width: 415px;
-    height: 1159px;
+    height: 1359px;
   }
   .home_link {
     left: 15px;
@@ -2677,55 +2678,71 @@ p.des {
     width: 309px;
     height: 162px;
   }
+  .lab-cert__section {
+    top: 575px;
+    left: 112px;
+    font-size: 24px;
+    line-height: 28px;
+  }
   .water-drop__img {
     width: 70px;
     height: 76px;
-    top: 525px;
+    top: 625px;
   }
   .water-drop__text {
-    top: 525px;
+    top: 625px;
     font-size: 10px;
     left: 112px;
   }
   .attachment__text {
-    top: 600px;
+    top: 710px;
     font-size: 10px;
     left: 112px;
   }
   .attachment__btn {
-    left: 156px;
-    top: 600px;
     width: 150px;
     padding: 12px 42px;
   }
   .attachment__btn-text {
     font-size: 12px;
   }
+  .cert-one {
+    left: 80px;
+    top: 500px;
+  }
+  .cert-two {
+    left: 156px;
+    top: 700px;
+  }
+  .cert-three {
+    left: 156px;
+    top: 875px;
+  }
   .flower__img {
-    top: 670px;
+    top: 825px;
     width: 68px;
     height: 68px;
   }
   .flower__title {
     left: 112px;
-    top: 670px;
+    top: 775px;
     font-size: 24px;
     line-height: 28px;
   }
   .flower__text {
     left: 112px;
-    top: 710px;
+    top: 825px;
     width: 200px;
     font-size: 10px;
   }
   .lab__img {
     left: 0;
-    top: 757px;
+    top: 950px;
     width: 310px;
     height: 150px;
   }
   .lab-footer {
-    top: 1025px;
+    top: 1225px;
     max-width: 415px;
     height: 134px;
   }
@@ -3427,7 +3444,7 @@ p.des {
   /********************** OUR LABORATORY ******************/
   .laboratory-container {
     max-width: 375px;
-    height: 1159px;
+    height: 1359px;
   }
   .lab-main-img {
     left: 7px;
@@ -3464,7 +3481,7 @@ p.des {
   }
   .lab-footer {
     max-width: 375px;
-    top: 1025px;
+    top: 1225px;
     height: 134px;
   }
   .contacts-footer_link {

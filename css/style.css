@@ -2558,6 +2558,12 @@ p.des {
   .room-body {
     margin: 0 45px;
   }
+  .room-view-products-btn {
+    width: 120px;
+  }
+  .room-btn-title {
+    padding: 12px 20px;
+  }
   .room__prev-btn {
     position: absolute;
     left: 50px;

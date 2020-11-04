@@ -5,6 +5,8 @@ window.addEventListener("DOMContentLoaded", function () {
   let slideIndex = 1;
   let localServer = document.createElement("a");
   let gitPages = document.createElement("a");
+  let woojiServer = document.createElement('a');
+  let woojiServerHP = document.createElement('a');
   let products = document.querySelectorAll(".cards-products");
   let checkboxes = document.querySelectorAll("input");
   let filterSection = document.querySelector(".filtres");
@@ -110,29 +112,44 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function openCertificates() {
     let certBtns = document.querySelectorAll(".attachment__btn");
+    let bigImage = document.createElement('img');
+    let modalPopup = document.querySelector('.modal');
+    let modalDialog = document.querySelector('.modal-dialog');
 
-    for (let i = 0; i < certBtns.length; i++) {
-      certBtns[i].addEventListener("click", function (e) {
-        let target = e.target;
+    if (certBtns !== null) {
+      for (let i = 0; i < certBtns.length; i++) {
+        certBtns[i].addEventListener('click', function(e) {
+          let target = e.target;
+          let imgSrc = '../images/lab_certs/' 
 
-        if (target.className === 'attachment__btn-text') {
-          if (target.parentNode.classList[1] === 'cert-one') {
-            window.open('images/lab_certs/first/1.pdf');
-          } else if (target.parentNode.classList[1] === "cert-two") {
-            window.open('images/lab_certs/second/1.pdf');
-          } else if (target.parentNode.classList[1] === "cert-three") {
-            window.open('images/lab_certs/third/1.pdf');
-          } 
-        } else {
-          if (target.classList[1] === 'cert-one') {
-            window.open('images/lab_certs/first/1.pdf');
-          } else if (target.classList[1] === "cert-two") {
-            window.open('images/lab_certs/second/1.pdf');
-          } else if (target.classList[1] === "cert-three") {
-            window.open('images/lab_certs/third/1.pdf');
-          } 
-        }
-      });
+          if (target.classList[1] === 'cert-one' || 
+            target.className === target.className) {
+              imgSrc += 'first/1.png'
+              bigImage.src = imgSrc;
+              bigImage.classList.add('bigImage');
+              modalPopup.style.display = 'block';
+              document.body.style.overflow = 'hidden';
+              modalDialog.appendChild(bigImage);
+          } else if (target.classList[1] === 'cert-two' ||
+            target.className === target.className) {
+              imgSrc += 'second/1.png'
+              bigImage.src = imgSrc;
+              bigImage.classList.add('bigImage');
+              modalPopup.style.display = 'block';
+              document.body.style.overflow = 'hidden';
+              modalDialog.appendChild(bigImage);
+          } else if (target.classList[1] === 'cert-two' ||
+            target.className === target.className) {
+              imgSrc += 'third/1.png'
+              bigImage.src = imgSrc;
+              bigImage.classList.add('bigImage');
+              modalPopup.style.display = 'block';
+              document.body.style.overflow = 'hidden';
+              modalDialog.appendChild(bigImage);
+            }
+
+        }); 
+      }
     }
   }
 
@@ -169,8 +186,11 @@ window.addEventListener("DOMContentLoaded", function () {
   function getRoomTitle() {
     localServer = "http://127.0.0.1:5500/index.html";
     gitPages = "https://nikolajbotalov.github.io/Wooji/index.html";
+    woojiServer = 'http://wooji.biz/';
+    woojiServerHP = 'http://wooji.biz/index.html';
 
-    if (location.href === localServer || location.href === gitPages) {
+    if (location.href === localServer || location.href === gitPages 
+        || location.href === woojiServer || location.href === woojiServerHP) {
       let roomBtnContainer = document.querySelector(".advantages-container");
 
       roomBtnContainer.addEventListener("click", function (e) {
